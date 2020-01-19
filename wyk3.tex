@@ -2,18 +2,30 @@
 
 \begin{document}
     to procedury wywodzenia/wybierania przypadków testowych.
-    \begin{itemize}
-        \item systematyzują podejście do testowania
-        \item efektywne w znajdowaniu możliwych awarii
-        \item mogą uchronić przed redundantnymi testami
-        \item powtarzalne
-        \item oparte na modelach (np. działania oprogramowania)
-        \item dostarczają elementy pokrycia
-    \end{itemize}
 
-    \begin{tabular}{|c|c|}
+    \begin{table}[H]
+        \begin{center}
+            \begin{tabular}{p{8cm} p{8cm}}
+                \begin{itemize}
+                    \item systematyzują podejście do testowania
+                    \item efektywne w znajdowaniu możliwych awarii
+                    \item mogą uchronić przed redundantnymi testami
+                \end{itemize}
+                &
+                \begin{itemize}
+                    \item powtarzalne
+                    \item oparte na modelach (np. działania oprogramowania)
+                    \item dostarczają elementy pokrycia
+                \end{itemize}
+            \end{tabular}
+        \end{center}
+    \end{table}
+
+
+    \begin{tabular}{|p{8cm}|p{8cm}|}
         \hline
         \textbf{Technika} & \textbf{Element pokrycia}\\
+        \hline
         \hline
         Podział na klasy równoważności & Klasa równoważności\\
         \hline
@@ -35,16 +47,6 @@
 
     \textbf{Hipoteza błędu} - każda technika projektowania testów zaprojektowana jest do
     wykrywania określonego typu awarii.
-
-    \textbf{Pokrycie} - stopień przetestowania elementów pokrycia dla zadanego
-    warunku testowego, mierzone procentowo (0-100\%), dotyczy określonego kryterium.
-
-    Zbiór testów spełnia kryterium pokrycia, jeśli pokrycie dla tych testów
-    wynosi 100\%
-
-    Kryterium K1 \textbf{subsumuje} kryterium K2, jeśli każdy zestaw testów
-    spełniający K1 spełnia również K2.
-
 
     \subsection{Techniki projektowania testów}
 
@@ -116,42 +118,54 @@
         \end{center}
     \end{table}
 
-    \textbf{Analiza wartości brzegowych}
-    \begin{itemize}
-        \item technika oparta na podziale na klasy równoważności
-        \item działa dla klas, na których zadany jest porządek liniowy
-        \item wartość brzegowa = wartość min/max zadanej klasy równoważności
-        \item można rozważać wartości brzegowe dla wejścia i wyjścia
-    \end{itemize}
-
-    \textbf{Tablice decyzyjne}
-    \begin{itemize}
-        \item testowanie kombinacji warunków
-        \item dobra metoda do testowania logiki biznesowej
-        \item pozwala na systematyczne sprawdzanie wszystkich kombinacji
-        \item ułatwia wykrywanie
-        \begin{itemize}
-            \item brakującej specyfikacji
-            \item błędnej (sprzecznej) specyfikacji
-        \end{itemize}
-    \end{itemize}
-    \textbf{Minimalizacja tablicy} - jeśli wszystkie kombinacje pewnych warunków dają te same akcje, możemy je scalić.
 
     \begin{table}[H]
         \begin{center}
-            \begin{tabular}{p{8cm} p{8cm}}
-                \textbf{Grafy przyczynowo-skutkowe}
+            \begin{tabular}{| p{8cm} p{8cm}|}
+                \hline
+                \multicolumn{2}{|c|}{ \textbf{Analiza wartości brzegowych}}\\
+                \hline
+                \begin{itemize}
+                    \item technika oparta na podziale na klasy równoważności
+                    \item działa dla klas, na których zadany jest porządek liniowy
+                \end{itemize} &
+                \begin{itemize}
+                    \item wartość brzegowa = wartość min/max zadanej klasy równoważności
+                    \item można rozważać wartości brzegowe dla wejścia i wyjścia
+                \end{itemize}
+                \\
+                \hline
+                \hline
+                \multicolumn{2}{|c|}{ \textbf{Tablice decyzyjne}}\\
+                \hline
+                \textbf{Tablice decyzyjne}
+                \begin{itemize}
+                    \item testowanie kombinacji warunków
+                    \item dobra metoda do testowania logiki biznesowej
+                    \item pozwala na systematyczne sprawdzanie wszystkich kombinacji
+                    \item ułatwia wykrywanie
+                    \begin{itemize}
+                        \item brakującej specyfikacji
+                        \item błędnej (sprzecznej) specyfikacji
+                    \end{itemize}
+                \end{itemize}
+                &
+                \textbf{Minimalizacja tablicy} - jeśli wszystkie kombinacje pewnych warunków dają te same akcje, możemy je scalić.\\
+                \hline
+                \hline
+                \multicolumn{2}{|c|}{ \textbf{Grafy przyczynowo-skutkowe}}\\
+                \hline
                 \begin{itemize}
                     \item stosowane w tych samych sytuacjach co tablice decyzyjne
                     \item graficzna reprezentacja zależności między przyczynami a skutkami
                     \item prosta transformacja na tablice decyzyjne
                 \end{itemize}
                 &
-                \begin{figure}[H]
-                    \includegraphics[width=0.5\linewidth]{graf.png}
-                \end{figure}\\
+                \raisebox{-\totalheight}{\includegraphics[width=8cm]{graf.png}}\\
+                \hline
             \end{tabular}
         \end{center}
     \end{table}
+
 
 \end{document}
