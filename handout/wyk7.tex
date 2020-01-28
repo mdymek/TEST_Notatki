@@ -1,0 +1,249 @@
+\documentclass[../main.tex]{subfiles}
+
+\begin{document}
+
+    \subsection{Testowanie eksploracyjne}
+
+    \begin{table}[H]
+        \begin{center}
+            \begin{tabular}{p{8cm} p{8cm}}
+                \begin{itemize}
+                    \item \textbf{Każde podejście do testów jest w jakimś stopniu eksploracyjne.}
+
+                    \item \textbf{Efektywność} techniki zależy od \textbf{stopnia posiadanych umiejętności}.
+
+                    \item W eksploracji można używać \textbf{formalnych technik} projektowania testów!
+                \end{itemize}
+                &
+                \textbf{Idea}:
+                \begin{enumerate}
+                    \item Pobieżna \textbf{eksploracja} systemu jako całości
+                    \item \textbf{Sprawdzenie} modułów
+                    \item Szczegółowa \textbf{analiza} dwóch rzeczy w jednym z modułów
+                    \item Pogłębiona \textbf{analiza zagadnienia}
+                \end{enumerate}
+            \end{tabular}
+        \end{center}
+    \end{table}
+
+    Forma działania: przez określony \textbf{czas}, \textbf{tester} wchodzi w interakcję z \textbf{produktem},
+    aby wypełnić testerską \textbf{misję} i \textbf{zaraportować} wyniki.
+
+    Przeprowadzane w \textbf{sesjach}, często z użyciem \textbf{karty testów} (test charter):
+    \begin{itemize}
+        \item np "zidentyfikuj i sprawdź
+        wszystkie stwierdzenia z podręcznika użytkownika", "sprawdź GUI pod kątem zgodności ze standardem Windows".
+        \item \textbf{nie jest bardzo precyzyjna} – adresatem jest \textbf{tester dobrze znający system}, środowisko,
+        słownictwo itp.
+        \item daje \textbf{swobodę} i \textbf{nie narzuca} konkretnych \textbf{rozwiązań} i podejść – wiele zależy od samego testera.
+    \end{itemize}
+
+    \begin{table}[H]
+        \begin{center}
+            \begin{tabular}{p{8cm} p{8cm}}
+                \multicolumn{2}{c}{\textbf{Kiedy używać testowania eksploracyjnego?}}\\
+                \multicolumn{2}{c}{Zwykle zawsze, gdy nie wiadomo jaki ma być następny test.}\\
+                \begin{itemize}
+                    \item gdy trzeba dać szybką informację zwrotną o nowym produkcie/cesze
+                    \item gdy trzeba szybko nauczyć się nowego produktu
+                    \item gdy użyto planowego testowania i szukamy różnorodności w testach
+                    \item gdy chcemy znaleźć najważniejszy defekt w najkrótszym czasie
+                \end{itemize}
+                &
+                \begin{itemize}
+                    \item gdy chcemy sprawdzić pracę innego testera przez niezależną analizę
+                    \item gdy chcemy zbadać i wyizolować konkretny defekt
+                    \item gdy chcemy określić poziom konkretnego ryzyka w celu oceny zastosowania planowanego testowania w tym obszarze
+                \end{itemize}
+            \end{tabular}
+        \end{center}
+    \end{table}
+
+    \subsection{Pomniejsze techniki}
+
+    \begin{table}[H]
+        \begin{center}
+            \begin{tabular}{| p{8cm} | p{8cm} |}
+                \hline
+                \textbf{Zgadywanie błędów} & \textbf{Testowanie oparte na listach kontrolnych}\\
+                \hline
+                \begin{itemize}
+                    \item czasem utożsamiane z \textbf{testowaniem ad-hoc}
+                    \item technika niebazująca na żadnym systematycznym podejściu czy technice
+                    \item opiera się na \textbf{doświadczeniu testera} w testowaniu
+                \end{itemize}
+                &
+                \begin{itemize}
+                    \item tester korzysta z \textbf{wysokopoziomowej listy elementów do
+                    zanalizowania}, sprawdzenia lub zapamiętania
+                    \item modelowa \textbf{lista kontrolna} może dotyczyć różnych aspektów, np.:
+                    \begin{itemize}
+                        \item charakterystyk jakościowych
+                        \item standardów GUI
+                        \item kluczowych operacji
+                        \item standardów kodowania
+                    \end{itemize}
+                \end{itemize}\\
+                \hline
+                \hline
+                \textbf{Ataki usterkowe} & \textbf{Techniki oparte na modelach defektów}\\
+                \hline
+                \begin{itemize}
+                    \item idea: \textbf{atak} na oprogramowanie przez jego \textbf{interfejs}: użytkowy (GUI, API)
+                    lub systemowy (system plikowy, interfejs bazodanowy, interfejs OS)
+                \end{itemize}
+                &
+                \begin{itemize}
+                    \item \textbf{taksonomia defektów} to system (hierarchicznych) kategorii
+                    stworzony jako pomoc w klasyfikowaniu defektów
+                \end{itemize}\\
+                \hline
+            \end{tabular}
+        \end{center}
+    \end{table}
+
+    \subsection{Testowanie mutacyjne}
+    \begin{table}[H]
+        \begin{center}
+            \begin{tabular}{p{8cm} p{8cm}}
+                \begin{itemize}
+                    \item metoda \textbf{oparta na składni}
+                    \item można ją zaklasyfikować jako \textbf{białoskrzynkową}
+                    \item uważana za jedną z \textbf{najmocniejszych} technik testowania
+                    \item bezpośrednio \textbf{testuje testy}, nie program
+                \end{itemize}
+                &
+                \begin{itemize}
+                    \item \textbf{mutant} = zmodyfikowany, kompilowalny kod
+                    \item \textbf{idea: każdy mutant powinien zostać zabity} przez
+                    przynajmniej 1 test
+                    \item \textbf{pokrycie mutacyjne} = $\frac{\# \text{zabitych mutantów}}{\# \text{mutantów}}$
+                \end{itemize}
+            \end{tabular}
+        \end{center}
+    \end{table}
+
+    \begin{table}[H]
+        \begin{center}
+            \begin{tabular}{p{8cm} p{8cm}}
+                \textbf{Zalety}
+                \begin{itemize}
+                    \item \textbf{wysoce zautomatyzowany} proces, wsparcie narzędziowe
+                    \item \textbf{tani} we wdrożeniu
+                    \item jedna z \textbf{najefektywniejszych} technik testowania
+                \end{itemize}
+                &
+                \textbf{Wady}
+                \begin{itemize}
+                    \item \textbf{wymaga wielu zasobów, czasochłonny}
+                    \item efektywność zależy od doboru operatorów mutacyjnych
+                    \item problem \textbf{mutantów równoważnych} = mających ten sam efekt, np != i < w warunku pętli
+                \end{itemize}
+            \end{tabular}
+        \end{center}
+    \end{table}
+
+
+    \subsection{Analiza statyczna}
+
+    \begin{table}[H]
+        \begin{center}
+            \begin{tabular}{p{8cm} p{8cm}}
+                \textbf{Cechy analizy statycznej} & \textbf{Typowe defekty wykrywane przez analizę statyczną}\\
+                \begin{itemize}
+                    \item \textbf{wczesne wykrywanie} defektów
+                    \item identyfikacja defektów trudnych do wykrycia w testach
+                    \item \textbf{wykrywanie zależności i niespójności} w modelach oprogramowania
+                    \item zwiększenie \textbf{pielęgnowalności} kodu
+                    \item \textbf{zapobieganie defektom}
+                \end{itemize}
+                &
+                \begin{itemize}
+                    \item odwołania do niezainicjalizowanej zmiennej
+                    \item niespójne interfejsy,
+                    \item niewykorzystane zmienne,
+                    \item martwy kod,
+                    \item brakująca lub błędna logika,
+                    \item zbyt skomplikowane instrukcje,
+                    \item naruszenie standardów kodowania,
+                    \item słabe punkty zabezpieczeń,
+                    \item naruszenie reguł modelowania, itp.
+                \end{itemize}\\
+            \end{tabular}
+        \end{center}
+    \end{table}
+
+    \subsubsection{Techniki analizy statycznej}
+    \begin{itemize}
+        \item \textbf{Analiza złożoności}\\
+        \textbf{Złożoność cyklomatyczna} (CC, McCabe cyclomatic complexity) to miara stopnia \textbf{skomplikowania struktury kodu}.
+
+        Metody (równoważne) obliczenia CC:
+        \begin{enumerate}
+            \item CC = max liczba ścieżek liniowo niezależnych
+            \item CC = E – N + 2
+            \item CC = liczba zamkniętych obszarów CFG + 1
+            \item CC = liczba decyzji w CFG + 1
+            (switch z n>2 liczony jako n–1 decyzji)
+        \end{enumerate}
+        Generalnie, im mniejsza wartość CC, tym lepiej.
+
+        \item \textbf{Parsowanie kodu} - analiza błędów poprawnych syntaktycznie.
+        \item \textbf{Analiza przepływu danych}, np:
+        \begin{itemize}
+            \item przypisanie nieprawidłowej wartości do zmiennej (typy)
+            \item użycie zmiennej przed jej zdefiniowaniem
+            \item użycie usuniętej uprzednio zmiennej
+            \item redefiniowanie zmiennej przed jej użyciem
+        \end{itemize}
+
+
+        \item \textbf{Graf wywołań}
+        \begin{itemize}
+            \item \textbf{Graf skierowany}, w którym:
+            \begin{itemize}
+                \item \textbf{wierzchołki} = jednostki oprogramowania (np. moduły, funkcje itp.)
+                \item \textbf{krawędzie} = komunikacja między jednostkami (np. wywołanie)
+            \end{itemize}
+
+            \item \textbf{Służy do do:}
+            \begin{itemize}
+                \item określenia kolejności testów integracyjnych
+                \item dolnego oszacowania na liczbę testów integracyjnych
+            \end{itemize}
+
+            \item \textbf{W testach integracyjnych} chcemy określić ich kolejność tak, aby:
+            \begin{itemize}
+                \item nie budować zbyt wielu namiastek/sterownków
+                \item gdy nastąpi awaria, łatwo będzie zidentyfikować miejsce defektu
+                \item będziemy testować rzeczywiste interakcje (np. faktyczne wywołania)
+            \end{itemize}
+        \end{itemize}
+    \end{itemize}
+
+    \subsection{Analiza dynamiczna}
+    \begin{itemize}
+        \item wykorzystywana do \textbf{wykrywania awarii}, gdzie symptomy mogą nie być natychmiastowo widoczne
+        \item analiza dynamiczna \textbf{działa na uruchomionym programie}/systemie
+    \end{itemize}
+
+    \subsubsection{Przykładowe techniki analizy dynamicznej}
+    \begin{itemize}
+        \item \textbf{wykrywanie wycieków pamięci}
+        \begin{itemize}
+            \item symptomy: stopniowe pogarszanie się wydajności aplikacji
+        \end{itemize}
+        \item \textbf{wykrywanie dzikich wskaźników}
+        \item \textbf{analiza wydajności}
+        \begin{itemize}
+            \item narzędzia mogą pomóc wykryć \textbf{wąskie gardła} wydajności
+            \item np. informacja o \textbf{ilości wywołań} modułu podczas wykonania
+            \item często wywoływane moduły to kandydaci do usprawnienia wydajności
+            \item połączona informacja o dynamicznym zachowaniu systemu i o grafach
+            wywołań pozwala testerowi zidentyfikować moduły mogące być kandydatami na szczegółowe testowanie
+        \end{itemize}
+
+        \item \textbf{analiza zachowania sieci}
+        \item \textbf{analiza aplikacji przy użyciu profilera}
+    \end{itemize}
+\end{document}
