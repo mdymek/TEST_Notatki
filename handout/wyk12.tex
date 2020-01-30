@@ -3,16 +3,7 @@
 \begin{document}
     \subsection{Planowanie testów.}
     \subsubsection{Szacowanie}
-    Szacowanie pozwala na lepszą \textbf{alokację zasobów} i lepszą \textbf{organizację} projektu. Jest podstawą do podjęcia
-    decyzji o ograniczeniu zakresu projektu, jeśli estymowany koszt lub czas jest zbyt duży.
-
-    Szacowanie jest \textbf{trudne}. Problemy wynikają nie tylko z samej natury problemu, lecz także z tzw. \textbf{przyczyn politycznych}.
-
-    \textbf{Rola szacowania}
-    \begin{itemize}
-        \item określenie \textbf{pracochłonności} projektu
-        \item określenie \textbf{kosztochłonności} projektu
-    \end{itemize}
+    \textbf{Rola szacowania} - określenie \textbf{pracochłonności} i \textbf{kosztochłonności} projektu.
 
     Do szacowania można użyć analizy punktów testowcyh (Test Point Analysis) - TMap.
 
@@ -24,18 +15,18 @@
                 \textbf{Cele dokumentowania} & \textbf{Rodzaje dokumentów}\\
                 \hline
                 \begin{itemize}
-                    \item \textbf{opisanie} obowiązujących w organizacji lub projekcie \textbf{reguł, standardów, celów} do osiągnięcia, stanowiących punkt odniesienia podczas prac projektowych
+                    \item \textbf{opisanie} obowiązujących w organizacji lub projekcie \textbf{reguł, standardów, celów} do osiągnięcia, stanowiących punkt odniesienia
                     \item akceptowanie/zezwalanie/potwierdzanie wykonania określonych czynności
                     \item utrwalenie danych
                     \item pomoc w monitorowaniu i kontroli procesów
                     \item pomoc w opanowaniu złożoności projektów
-                    \item mniej lub bardziej formalna \textbf{platforma komunikacji}
+                    \item \textbf{platforma komunikacji}
                 \end{itemize}
                 &
                 \begin{itemize}
-                    \item \textbf{Polityka testów} – wysokopoziomowy opis \textbf{zasad, podejść} i głównych \textbf{zadań} organizacji dotyczących testowania.
-                    \item \textbf{Strategia testów} – wysokopoziomowy opis \textbf{poziomów} testów do wykonania oraz testów w ramach tych poziomów dla organizacji lub programu.
-                    \item \textbf{Plan testów} – opis \textbf{zakresu, metod, zasobów i harmonogramu} czynności testowych dla projektu.
+                    \item \textbf{Polityka testów} – wysokopoziomowy opis \textbf{zasad, podejść} i głównych \textbf{zadań} organizacji.
+                    \item \textbf{Strategia testów} – wysokopoziomowy opis \textbf{poziomów} testów do wykonania oraz testów w ramach tych poziomów.
+                    \item \textbf{Plan testów} – opis \textbf{zakresu, metod, zasobów i harmonogramu} czynności testowych.
                     \item \textbf{Dziennik wykonania testów} – zapis czynności testowych.
                 \end{itemize}\\
                 \hline
@@ -51,16 +42,16 @@
                 \multicolumn{2}{c}{\textbf{ Na podstawie metryk możemy:}}\\
                 \begin{itemize}
                     \item \textbf{mierzyć postęp} procesu testowego
-                    \item \textbf{obliczyć zwrot} z inwestycji (ROI), tzn. czy proces testowy daje pożądane korzyści
-                    \item \textbf{ocenić} i porównać różne możliwe \textbf{podejścia} do testowania
-                    \item \textbf{ocenić} i kontrolować \textbf{wydajność} procesu testowego
+                    \item \textbf{obliczyć zwrot} z inwestycji
+                    \item \textbf{ocenić} i porównać różne możliwe \textbf{podejścia}
+                    \item \textbf{ocenić} i kontrolować \textbf{wydajność} procesu
                 \end{itemize}
                 &
                 \begin{itemize}
-                    \item \textbf{ocenić} i kontrolować \textbf{poprawę} procesu testowego
-                    \item \textbf{zbudować system „wczesnego ostrzegania”}
-                    \item \textbf{zbudować modele predykcyjne}
-                    \item porównywać proces z procesami \textbf{konkurencji}
+                    \item \textbf{ocenić} i kontrolować \textbf{poprawę} procesu
+                    \item zbudować system \textbf{„wczesnego ostrzegania”}
+                    \item zbudować \textbf{modele predykcyjne}
+                    \item \textbf{porównywać proces} z procesami konkurencji
                 \end{itemize}\\
             \end{tabular}
         \end{center}
@@ -68,19 +59,18 @@
 
     \textbf{Wymiary postępu testowania.}
     \begin{itemize}
-        \item Ryzyka, defekty, testy i pokrycie – \textbf{metryki ilościowe}
-        \item Pewność – najbardziej subiektywna, często \textbf{jakościowa}; pomiar za pomocą ankiet, wywiadów, kwesionariuszy
+        \item Ryzyka, defekty, testy i pokrycie – \textbf{metryki ilościowe}.
+        \item Pewność – najbardziej subiektywna, często \textbf{jakościowa}; pomiar za pomocą ankiet, wywiadów itd.
     \end{itemize}
 
-    \begin{figure}[H]
-        \includegraphics[width=\linewidth]{metryki.png}
-    \end{figure}
-
-    $MTTF$ = \textbf{Mean Time To Failure} - średni czas do awarii
-
-    $MTTR$ = \textbf{Mean Time To Repair} - średni czas do naprawy
-
-    $MTBF$ = \textbf{Mean Time Between Failures} - średni czas między awariami
+    \textbf{Rodzaje metryk}
+    \begin{itemize}
+        \item \textbf{Metryki projektu} - opisują postęp w kierunku uprzednio zdefiniowanych celów lub kryteriów
+        wyjścia, np. odsetek zdanych testów,
+        \item \textbf{Metryki produktu} - opisują atrybuty wytwarzanego oprogramowania, np. gęstość defektów, złożoność cyklomatyczna,
+        \item \textbf{Metryki procesu} - mierzą zdolność procesu wytwórczego lub testowego, np. odestek defektów znalezioncyh/usuniętych
+        w danej fazie projektu.
+    \end{itemize}
 
     \begin{table}[H]
         \begin{center}
@@ -99,7 +89,20 @@
             \end{tabular}
         \end{center}
     \end{table}
-    Wraz ze wzrostem dojrzałości oprogramowania wzrasta MTTF.
+
+    \begin{table}[H]
+        \begin{center}
+            \begin{tabular}{c}
+
+                $MTTF$ = \textbf{Mean Time To Failure}\\
+
+                $MTTR$ = \textbf{Mean Time To Repair}\\
+
+                $MTBF$ = \textbf{Mean Time Between Failures}\\
+
+            \end{tabular}
+        \end{center}
+    \end{table}
 
     \textbf{Przykłady metryk}
     \begin{itemize}
@@ -112,18 +115,13 @@
 
     \subsection{Zarządzanie incydentami}
     \subsubsection{IEEE 1044.}
-    Cykl życia defektu wg IEEE 1044.
+    \textbf{Cykl życia defektu} wg IEEE 1044.
     \begin{enumerate}
-        \item \textbf{Rozpoznanie (recognition)} – zaobserwowanie anomalii (incydent) wskazującej na potencjalny defekt – może nastąpić w dowolnej fazie cyklu życia oprogramowania
-        \item \textbf{Badanie (investigation)} – badanie incydentu; może wykryć powiązane problemy i zaproponować rozwiązania
-        \item \textbf{Działanie (action)} – możemy chcieć rozwiązać defekt lub podjąć akcje zapobiegania wystąpienia podobnych defektów w przyszłości; po rozwiązaniu muszą nastąpić testy regresji i testy potwierdzające; testy dotychczas blokowane przez defekt mogą zostać wykonane
+        \item \textbf{Rozpoznanie (recognition)} – zaobserwowanie anomalii wskazującej na potencjalny defekt
+        \item \textbf{Badanie (investigation)} incydentu - wykrywa powiązane problemy i proponuje rozwiązania
+        \item \textbf{Działanie (action)} – rozwiązanie defektu, akcje zapobiegawcze, testy regresji i testy potwierdzające
         \item \textbf{Dyspozycja (disposition)} – zbieranie dalszych informacji i przeniesienie defektu w stan końcowy
     \end{enumerate}
-
-    \begin{figure}[H]
-        \includegraphics[width=\linewidth]{ieee1044.png}
-    \end{figure}
-
 
     \begin{table}[H]
         \begin{center}
@@ -161,7 +159,7 @@
         \begin{center}
             \begin{tabular}{| p{8cm} | p{8cm} |}
                 \hline
-                \textbf{Atrybuty defektu wg IEEE 1044} &   \textbf{Klasyfikacje wpływu defektu wg IEEE 1044}\\
+                \textbf{Atrybuty defektu wg IEEE 1044} & \textbf{Klasyfikacje wpływu defektu wg IEEE 1044}\\
                 \hline
                 zgłoszenie defektu pozwalające na podjęcie działania jest:
                 \begin{itemize}
@@ -192,7 +190,7 @@
     \begin{table}[H]
         \begin{center}
             \begin{tabular}{p{8cm} p{8cm}}
-                \raisebox{-\linewidth}{ \includegraphics[width=8cm]{deming.png}}
+                \raisebox{-\totalheight}{ \includegraphics[width=6cm]{deming.png}}
                 &
                 \begin{itemize}
                     \item Test Maturity Model (TMM)
@@ -212,15 +210,7 @@
 
     \textbf{Modele referencyjne}
     \begin{itemize}
-        \item \textbf{procesu}
-        \begin{itemize}
-            \item (jednowymiarowa) ocena dojrzałości procesu
-            \item wskazują kolejność usprawnień
-        \end{itemize}
-        \item \textbf{zawartości}
-        \begin{itemize}
-            \item opisują ważne procesy software’owe i co powinno się z nimi robić
-            \item ale nie szeregują zadań w żadnej kolejności
-        \end{itemize}
+        \item \textbf{procesu} - (jednowymiarowa) \textbf{ocena dojrzałości procesu}, wskazują \textbf{kolejność usprawnień}
+        \item \textbf{zawartości} - \textbf{opisują} ważne procesy software'owe i co powinno się z nimi robić, ale \textbf{nie szeregują} zadań w żadnej kolejności
     \end{itemize}
 \end{document}

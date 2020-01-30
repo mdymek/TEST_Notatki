@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="da66f0ac-7425-43ed-9376-a3e573d56266" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/handout/graphics/auttest.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/handout/graphics/genaut.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/handout/graphics/ieee1044.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/handout/graphics/metryki.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/handout/graphics/projektowanie.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/handout/graphics/projektowanie29119.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/handout/handout.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/handout/wyk1.tex" beforeDir="false" afterPath="$PROJECT_DIR$/handout/wyk1.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handout/wyk11.tex" beforeDir="false" afterPath="$PROJECT_DIR$/handout/wyk11.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handout/wyk12.tex" beforeDir="false" afterPath="$PROJECT_DIR$/handout/wyk12.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handout/wyk13.tex" beforeDir="false" afterPath="$PROJECT_DIR$/handout/wyk13.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handout/wyk2.tex" beforeDir="false" afterPath="$PROJECT_DIR$/handout/wyk2.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handout/wyk4.tex" beforeDir="false" afterPath="$PROJECT_DIR$/handout/wyk4.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handout/wyk5.tex" beforeDir="false" afterPath="$PROJECT_DIR$/handout/wyk5.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handout/wyk6.tex" beforeDir="false" afterPath="$PROJECT_DIR$/handout/wyk6.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handout/wyk7.tex" beforeDir="false" afterPath="$PROJECT_DIR$/handout/wyk7.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handout/wyk8.tex" beforeDir="false" afterPath="$PROJECT_DIR$/handout/wyk8.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handout/wyk9.tex" beforeDir="false" afterPath="$PROJECT_DIR$/handout/wyk9.tex" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/handout/handout.tex">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="291">
+              <caret line="42" column="24" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/handout/wyk7.tex">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="179">
+              <caret line="210" column="32" selection-start-line="210" selection-start-column="32" selection-end-line="210" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>metry</find>
+      <find>met</find>
+      <find>metr</find>
+      <find>Me</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/handout/wyk3.tex" />
+        <option value="$PROJECT_DIR$/handout/wyk1.tex" />
+        <option value="$PROJECT_DIR$/handout/wyk4.tex" />
+        <option value="$PROJECT_DIR$/handout/wyk6.tex" />
+        <option value="$PROJECT_DIR$/handout/wyk8.tex" />
+        <option value="$PROJECT_DIR$/handout/wyk9.tex" />
+        <option value="$PROJECT_DIR$/handout/wyk11.tex" />
+        <option value="$PROJECT_DIR$/handout/wyk12.tex" />
+        <option value="$PROJECT_DIR$/handout/wyk2.tex" />
+        <option value="$PROJECT_DIR$/handout/wyk13.tex" />
+        <option value="$PROJECT_DIR$/handout/wyk5.tex" />
+        <option value="$PROJECT_DIR$/handout/wyk7.tex" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/TEST_Notatki.iml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="928" />
+    <option name="height" value="956" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="TEST_Notatki" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TEST_Notatki" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TEST_Notatki" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TEST_Notatki" type="462c0819:PsiDirectoryNode" />
+              <item name="handout" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/handout" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/handout" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/handout" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="da66f0ac-7425-43ed-9376-a3e573d56266" name="Default Changelist" comment="" />
+      <created>1580120808818</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580120808818</updated>
+      <workItem from="1580120809987" duration="18128000" />
+      <workItem from="1580378403461" duration="602000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="18730000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="928" height="956" extended-state="0" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20316027" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.29050925" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/handout/main.tex" />
+    <entry file="file://$PROJECT_DIR$/handout/wyk1.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handout/wyk3.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="111" lean-forward="true" selection-start-line="111" selection-end-line="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handout/wyk4.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-220">
+          <caret line="90" column="57" selection-start-line="90" selection-start-column="57" selection-end-line="90" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handout/wyk8.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="215" column="34" selection-start-line="215" selection-start-column="34" selection-end-line="215" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handout/wyk9.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="115" column="111" selection-start-line="115" selection-start-column="111" selection-end-line="115" selection-end-column="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handout/wyk11.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="137" column="39" lean-forward="true" selection-start-line="137" selection-start-column="39" selection-end-line="137" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handout/wyk12.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="213" column="35" selection-start-line="213" selection-start-column="35" selection-end-line="213" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handout/wyk2.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="183" column="20" selection-start-line="183" selection-start-column="20" selection-end-line="183" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handout/wyk13.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="115" column="15" selection-start-line="115" selection-start-column="15" selection-end-line="115" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handout/wyk6.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="104" column="50" selection-start-line="104" selection-start-column="50" selection-end-line="104" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handout/wyk5.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="61" column="52" selection-start-line="61" selection-start-column="52" selection-end-line="61" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handout/handout.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="42" column="24" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handout/wyk7.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="210" column="32" selection-start-line="210" selection-start-column="32" selection-end-line="210" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

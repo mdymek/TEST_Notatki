@@ -11,32 +11,27 @@
     \textbf{Problemy związane z pokryciem logicznym}
     \begin{itemize}
         \item \textbf{Problem sterowania} - jakie wartości x, y, z zadać, aby program wykonał się dokładnie taką ścieżką,
-        jaką chcemy? Istnieją metody pomagające w tym, np. wykonanie symboliczne kodu (np. KLEE).
+        jaką chcemy?
 
-
-        \item \textbf{Problem zwarcia} - zwarcie to optymalizacja kompilatora pozwalająca szybciej ewaluować
-        formuły logiczne (leniwa ewaluacja).
+        \item \textbf{Problem zwarcia} - leniwa ewaluacja formuł logicznych przez kompilator.
     \end{itemize}
     \subsubsection{Podstawowe kryteria}
 
     \begin{itemize}
-        \item \textbf{Testowanie decyzji}
+        \item \textbf{Testowanie decyzji} rozważa \textbf{decyzję jako niepodzielną całość}.
         \begin{itemize}
-            \item rozważa decyzję jako niepodzielną całość
             \item każda \textbf{decyzja} musi \textbf{przynajmniej raz} przyjąć wartość TRUE i przynajmniej raz FALSE.
             \item praktycznie tożsame z \textbf{pokryciem krawędzi}.
         \end{itemize}
 
-        \item \textbf{Testowanie warunków}
+        \item \textbf{Testowanie warunków} rozważa \textbf{sposób ewaluacji decyzji}.
         \begin{itemize}
-            \item rozważa \textbf{sposób ewaluacji decyzji}
             \item \textbf{każdy warunek} musi \textbf{przynajmniej raz} przyjąć wartość TRUE i przynajmniej raz wartość FALSE
         \end{itemize}
 
-        \item \textbf{Testowanie wielokrotnych warunków}
+        \item \textbf{Testowanie wielokrotnych warunków} testuje \textbf{wszystkie możliwe kombinacje} wartości
+        logicznych \textbf{warunków} tworzących decyzje.
         \begin{itemize}
-            \item wymaga przetestowania \textbf{wszystkich możliwych kombinacji} wartości
-            logicznych \textbf{warunków} tworzących decyzję
             \item wada: liczba testów jest wykładnicza względem liczby różnych
             warunków: dla N warunków musi być $2^N$ testów
             \item jeśli zachodzi \textbf{zwarcie}, liczba rzeczywistych testów może być zazwyczaj zredukowana.
@@ -83,7 +78,6 @@
                 \textbf{Zalety}
                 \begin{itemize}
                     \item \textbf{dobre kryterium pośrednie}
-                    \item popularne w środowisku producentów awioniki (standard DO-178C)
                     \item \textbf{subsumuje pokrycie warunków/decyzji}, jednocześnie
                     wymagając tylko \textbf{liniowej} względem liczby klauzul liczby testów
                     \item dobra w znajdowaniu defektów takich jak:
@@ -108,7 +102,7 @@
                         \item wymagać kryterium MC/DC jedynie dla termów niepowiązanych
                         \item analizować każdą decyzję zawierającą termy powiązane przypadek po przypadku
                     \end{itemize}
-                    \item \textbf{problem zwarcia} (short-circuiting) może uniemożliwić osiągnięcie
+                    \item \textbf{problem zwarcia} może uniemożliwić osiągnięcie
                     odpowiedniego pokrycia MC/DC
                     \item \textbf{bardziej skomplikowane} niż słabsze kryteria
                     \begin{itemize}

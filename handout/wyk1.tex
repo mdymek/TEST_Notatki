@@ -3,101 +3,35 @@
 \begin{document}
     \subsection{Definicje.}
 
-    \begin{table}[H]
-        \begin{center}
-            \begin{tabular}{| p{8cm}| p{8cm}|}
-                \hline
-                \multicolumn{2}{|c|}{\multirow{2}{*}{\textbf{TESTOWANIE}}}\\
-                \multicolumn{2}{|c|}{}\\
-                \hline
-                \hline
-                \textbf{Definicja} & \textbf{Pojęcia}\\
-                \hline
-                \textbf{Definicja testowania jest niejednoznaczna:}
-                \begin{itemize}
-                    \item Testowanie to \textbf{wykonywanie oprogramowania z intencją wykrywania}
-                    tkwiących w nim \textbf{błędów}.
-                    \item Testowanie to krytyczne sprawdzanie, obserwacja i \textbf{ewaluacja jakości}
-                    oprogramowania.
-                    \item Testowanie to proces \textbf{analizowania} fragmentu oprogramowania w celu
-                    wykrycia różnic pomiędzy istniejącymi a pożądanymi warunkami (czyli
-                    defektów) oraz w celu oceny cech tego fragmentu oprogramowania [IEEE].
-                \end{itemize}
-                &
-                \textbf{Pomyłka} - człowiek robi coś źle.
+    \textbf{Pomyłka} - człowiek robi coś źle.
 
-                \textbf{Defekt (usterka, bug, fault)} - \textbf{statyczny defekt} w kodzie (lub dokumentacji), skutek pomyłki człowieka.
+    \textbf{Defekt (usterka, bug, fault)} - \textbf{statyczny defekt} w kodzie (lub dokumentacji), skutek pomyłki człowieka.
 
-                \textbf{Błąd} – \textbf{nieprawidłowy stan wewnętrzny} programu
-                np. licznik pętli ustawiony na drugim zamiast pierwszym elemencie tablicy.
+    \textbf{Błąd} – \textbf{nieprawidłowy stan wewnętrzny} programu
+    np. licznik pętli ustawiony na drugim zamiast pierwszym elemencie tablicy.
 
-                \textbf{Awaria (failure)} – widoczne, nieprawidłowe działanie oprogramowania
-                np. crash systemu, zwrócenie nieprawidłowego wyniku, komunikat o błędzie.
+    \textbf{Awaria (failure)} – widoczne, nieprawidłowe działanie oprogramowania
+    np. crash systemu, zwrócenie nieprawidłowego wyniku, komunikat o błędzie.
 
-                \textbf{Incydent} – wydarzenie, które wymaga analizy
+    \textbf{Incydent} – wydarzenie, które wymaga analizy
 
-                \textbf{Suita testowa} - ????
-                \\
-                \hline
-                \textbf{7 uniwersalnych zasad testowania.} &  \textbf{Normy i standardy związanie z testowaniem}\\
-                \hline
-                \begin{enumerate}
-                    \item Testowanie ujawnia usterki
-                    \item Testowanie gruntowne jest niewykonalne
-                    \item Wczesne testowanie
-                    \item Kumulowanie się błędów
-                    \item Paradoks pestycydów
-                    \item Testowanie zależy od kontekstu
-                    \item Mylne przekonanie o braku błędów
-                \end{enumerate}
-                &
-                \begin{itemize}
-                    \item \textbf{IEEE 829} – dokumentacja testowa
-                    \item \textbf{IEEE 1008} – standard dla testowania jednostkowego
-                    \item \textbf{IEEE 1028} – standard dla przeglądów i audytów
-                    \item \textbf{ISO 9126} – model jakości (stara)
-                    \item \textbf{ISO/IEEE 25000} – model jakości (nowa)
-                    \item \textbf{ISO/IEEE 29119} – Software Testing Standard
-                \end{itemize}\\
-                \hline
-            \end{tabular}
-        \end{center}
-    \end{table}
+    \textbf{Suita testowa} - ????
 
+    \textbf{Paradoks pestycydów} - jeśli ciągle uruchamiamy te same testy to tracą one zdolność do znajdywania nowych defektów.
 
+    \textbf{Ewaluacja} - na początku i na końcu
+    \begin{itemize}
+        \item  \textbf{Walidacja} - dokonywana w celu
+        potwierdzenia zgodności z założonymi celami użycia. (\textit{are we building the right thing?})
 
-    \begin{table}[H]
-        \begin{center}
-            \begin{tabular}{| p{8cm}| p{8cm}|}
-                \hline
-                \multicolumn{2}{|c|}{\textbf{Ewaluacja}}\\
-                \hline
-                na początku & na końcu\\
-                \hline
-                \textbf{Walidacja} - dokonywana w celu
-                potwierdzenia zgodności z założonymi celami użycia. &
-                \textbf{Weryfikacja} - sprawdzająca, czy produkt danej fazy spełnia wymagania
-                (zwykle techniczne) ustalone podczas poprzedniej fazy.\\
-                \hline
-                are we building the right thing? & are we building the thing right?\\
-                \hline
-                \hline
-                \multicolumn{2}{|c|}{\textbf{Testowanie to nie debugowanie}}\\
-                \hline
-                \textbf{Testowanie} & \textbf{Debugowanie}\\
-                \hline
-                \begin{itemize}
-                    \item znajduje awarie
-                    \item sprawdza, czy usterka została poprawnie usunięta
-                \end{itemize}
-                &
-                Na podstawie informacji o awarii:
-                \begin{itemize}
-                    \item \textbf{lokalizuje miejsce usterki} powodującej tę awarię
-                    \item usuwa (\textbf{naprawia}) usterkę
-                \end{itemize}\\
-                \hline
-            \end{tabular}
-        \end{center}
-    \end{table}
+        \item \textbf{Weryfikacja} - sprawdzająca, czy produkt danej fazy spełnia wymagania
+        (zwykle techniczne) ustalone podczas poprzedniej fazy. (\textit{are we building the thing right?})
+    \end{itemize}
+
+    \textbf{Testowanie to nie debugowanie}
+    \begin{itemize}
+        \item \textbf{Testowanie} znajduje awarie, sprawdza czy usterki zostały usunięte.
+        \item \textbf{Debugowanie} lokalizuje miejsce usterki powodującej awarię i ją usuwa
+    \end{itemize}
+
 \end{document}

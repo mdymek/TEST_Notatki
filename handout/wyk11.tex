@@ -1,39 +1,55 @@
 \documentclass[../main.tex]{subfiles}
 
 \begin{document}
-    \begin{itemize}
-        \item Zarządzanie strategicznie,
-        \item Zarządzanie operacyjne,
-        \item Zarządzanie zespołem testowym.
-    \end{itemize}
+
+    \begin{table}[H]
+        \begin{center}
+            \begin{tabular}{p{5cm}  p{4,8cm} p{7cm}}
+                \begin{itemize}
+                    \item Zarządzanie strategicznie,
+                \end{itemize}
+                &
+                \begin{itemize}
+                    \item Zarządzanie operacyjne,
+                \end{itemize}
+                &
+                \begin{itemize}
+                    \item Zarządzanie zespołem testowym.
+                \end{itemize}
+            \end{tabular}
+        \end{center}
+    \end{table}
 
     \subsection{Testowanie oparte na ryzyku.}
 
     \textbf{Ryzyko} – możliwość (prawdopodobieństwo) wystąpienia negatywnego lub niepożądanego zdarzenia.
 
-    \textbf{Poziom ryzyka} – ważność ryzyka określona przez prawdopodobieństwo i wpływ; może być ilościowy lub
-    jakościowy.
+    \textbf{Poziom ryzyka} – ważność określona przez prawdopodobieństwo i wpływ; \textbf{ilościowy} lub
+    \textbf{jakościowy}.
 
     \textbf{Zarządzanie ryzykiem} - w podejściu opartym na ryzyku ryzyko jest podstawową bazą testów.
 
     \begin{table}[H]
         \begin{center}
-            \begin{tabular}{| p{8cm}  p{8cm} |}
+            \begin{tabular}{| p{5cm} p{5cm} p{5cm} |}
                 \hline
-                \multicolumn{2}{|c|}{\textbf{Identyfikacja ryzyka}}\\
-                \multicolumn{2}{|c|}{proces identyfikacji możliwych do wystąpienia ryzyk. Techniki identyfikacji
+                \multicolumn{3}{|c|}{\textbf{Identyfikacja ryzyka}}\\
+                \multicolumn{3}{|c|}{proces identyfikacji możliwych do wystąpienia ryzyk. Techniki identyfikacji
                 ryzyka:}\\
                 \hline
                 \begin{itemize}
                     \item burza mózgów
                     \item listy kontrolne
                     \item historia awarii
-                    \item wywiady eksperckie
                 \end{itemize}
                 &
                 \begin{itemize}
+                    \item wywiady eksperckie
                     \item szablony ryzyk
                     \item niezależna ocena
+                \end{itemize}
+                &
+                \begin{itemize}
                     \item doświadczenie z poprzednich projektów
                 \end{itemize}\\
                 \hline
@@ -47,7 +63,7 @@
                 \hline
                 \multicolumn{2}{|c|}{\textbf{Analiza ryzyka}}\\
                 \multicolumn{2}{|p{16,5cm}|}{proces oceny zidentyfikowanych ryzyk w celu oszacowania ich wpływu
-                oraz prawdopodobieństwa wystąpienia}\\
+                oraz prawdopodobieństwa wystąpienia,}\\
                 \hline
                 Wyjście: \textbf{lista ryzyk}
                 \begin{itemize}
@@ -81,8 +97,7 @@
                 \multicolumn{2}{|c|}{ciągła obserwacja aktualnego stanu systemu Przykładowe metryki zbierane w ramach procesu:}\\
                 \hline
                 \begin{itemize}
-                    \item \% pokrytych wymagań
-                    \item \% pokrytych funkcjonalności
+                    \item \% pokrytych wymagań, funkcjonalności
                     \item \% testów zdanych/nie zdanych
                     \item poziom zminimalizowanego i rezydualnego ryzyka
                 \end{itemize}
@@ -90,7 +105,7 @@
                 \begin{itemize}
                     \item ryzyka w podziale na:
                     \begin{itemize}
-                        \item zminimalizowane (odpowiadające testy przeszły)
+                        \item zminimalizowane (testy przeszły)
                         \item "w trakcie" (wykryto problemy)
                         \item niepokryte (nie uruchomiono testów)
                     \end{itemize}
@@ -128,7 +143,11 @@
                 \hline
                 \textbf{QFD (Quality Function Deployment)}
                 &
+
                 \textbf{PRisMa (Product Risk Management)}\\
+                \begin{itemize}
+                    \item proces/narzędzia przekształcania wymagań użytkownika na specyfikacje systemowe
+                \end{itemize}
                 &
                 \begin{itemize}
                     \item prawdopodobieństwo i wpływ traktowane osobno, nie łącznie

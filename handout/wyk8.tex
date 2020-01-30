@@ -5,16 +5,6 @@
     \subsection{Jakość oprogramowania}
     Jakości jest pojęciem \textbf{niejednoznacznym} i \textbf{wielowymiarowym}.
 
-    \textbf{Różne spojrzenia wg Garvina:}
-    \begin{itemize}
-        \item jakość oparta na \textbf{produkcie} (np. charakterystyki jakościowe)
-        \item jakość oparta na \textbf{użytkowniku} (funkcjonalność, fitness for use)
-        \item jakość oparta na \textbf{wytwarzaniu} (jakość „techniczna” procesu)
-        \item jakość oparta na \textbf{wartości} (czas vs. wysiłek vs. koszt)
-        \item jakość \textbf{transcendentna} (nieoperacyjna, trudno mierzalna, np. „grywalność” gry komputerowej)
-    \end{itemize}
-
-
     \subsubsection{Model jakości ISO 9126}
 
     \begin{table}[H]
@@ -45,51 +35,36 @@
     \subsubsection{Bezpieczeństwo}
     \begin{itemize}
         \item Bezpieczeństwo to zbiór atrybutów oprogramowania umożliwiający \textbf{ochronę przed nieautoryzowanym
-        dostępem} do programu i danych
+        dostępem} do programu i danych.
         \item \textbf{OWASP (Open Web Application Security Project)} - obszerna baza zasobów dot. bezpieczeństwa webowego, np.:
-        \begin{itemize}
-            \item baza ataków
-            \item baza książek i innych materiałów o bezpieczeństwie
-            \item portal społecznościowy
-            \item projekty związane z bezpieczeństwem
-            \item dokumentacja, modele
-        \end{itemize}
+        baza ataków, książek i innych materiałów o bezpieczeństwie.
         \item \textbf{SAMM (Software Assurance Maturity Model)} - model pozwalający organizacji zdefiniować i wdrożyć strategię dla zapewnienia bezpieczeństwa,
-        dopasowaną do określonych ryzyk
+        dopasowaną do określonych ryzyk.
     \end{itemize}
 
     \subsubsection{Użyteczność}
     \begin{itemize}
         \item Użyteczność to \textbf{zdolność systemu do bycia zrozumiałym}, łatwym do nauczenia i użycia.
         \item Testowanie \textbf{skupia się na użytkownikach}.
-        \item \textbf{Efekty} testowania obserwowane na \textbf{prawdziwych}, końcowych \textbf{użytkownikach}, a nie testerach
+        \item \textbf{Efekty} testowania obserwowane na \textbf{prawdziwych}, końcowych \textbf{użytkownikach}, a nie testerach.
     \end{itemize}
 
     \begin{table}[H]
         \begin{center}
-            \begin{tabular}{p{8cm} p{8cm}}
+            \begin{tabular}{p{5cm} p{11cm}}
                 \textbf{Podcharakterystyki}
                 \begin{itemize}
-                    \item \textbf{Zrozumiałość} - jak łatwo zrozumieć co program robi i dlaczego mielibyśmy go używać?
-                    \item \textbf{Łatwość nauki} - łatwość zrozumienia jak program działa
-                    \item \textbf{Łatwość obsługi} - czy obsługa programu jest intuicyjna?
-                    \item \textbf{Atrakcyjność} - czy użytkownik chętnie używa programu?
+                    \item Zrozumiałość
+                    \item Łatwość nauki
+                    \item Łatwość obsługi
+                    \item Atrakcyjność
                 \end{itemize}
                 &
                 \textbf{Metryki}
-
-                Testowanie użyteczności jest ukierunkowane na pomiar:
                 \begin{itemize}
-                    \item \textbf{efektywności}
-                    \begin{itemize}
-                        \item np. stopień osiągnięcia przez użytkownika celów, z
-                        określoną dokładnością
-                    \end{itemize}
-                    \item \textbf{wydajności}
-                    \begin{itemize}
-                        \item ilość zasobów zużytych
-                    \end{itemize}
-                    \item \textbf{satysfakcji} klienta z użytkowania produktu
+                    \item \textbf{efektywność} = np. stopień osiągnięcia przez użytkownika celów
+                    \item \textbf{wydajność} = ilość zasobów zużytych
+                    \item \textbf{satysfakcja} klienta z użytkowania produktu
                 \end{itemize}
             \end{tabular}
         \end{center}
@@ -116,39 +91,21 @@
                 \textbf{Całościowe testowanie użyteczności} - przeprowadzane \textbf{po implementacji}.
                 \\
                 \hline
-            \end{tabular}
-        \end{center}
-    \end{table}
-    \begin{table}[H]
-        \begin{center}
-            \begin{tabular}{| p{8cm} | p{8cm} |}
                 \hline
                 \multicolumn{2}{|c|}{\textbf{Rodzaje}}\\
                 \hline
                 \textbf{Formalne testowanie użyteczności} - często wymaga uprzedniego \textbf{przygotowania} rzeczywistych
-                lub reprezentatywnych \textbf{użytkowników} (dostarczenie scenariuszy zadań, instrukcji)
+                lub reprezentatywnych \textbf{użytkowników} (dostarczenie scenariuszy zadań, instrukcji).
                 &
                 \textbf{Nieformalne testowanie użyteczności} - pozwala użytkownikowi \textbf{eksperymentować} z
-                oprogramowaniem, aby obserwatorzy ocenili jak trudna dla użytkownika jest praca z systemem\\
+                oprogramowaniem, aby obserwatorzy ocenili jak trudna dla użytkownika jest praca z systemem.\\
                 \hline
-            \end{tabular}
-        \end{center}
-    \end{table}
-    \begin{table}[H]
-        \begin{center}
-            \begin{tabular}{| p{8cm} | p{8cm} |}
                 \hline
                 \multicolumn{2}{|c|}{\textbf{Walidacja}}\\
                 \hline
                 \multicolumn{2}{|p{16,5cm}|}{powinna być przeprowadzona \textbf{w warunkach} tak \textbf{bliskich rzeczywistym} warunkom użytkowania
                 oprogramowania, jak to tylko możliwe, np. w \textbf{laboratorium użyteczności}.}\\
                 \hline
-            \end{tabular}
-        \end{center}
-    \end{table}
-    \begin{table}[H]
-        \begin{center}
-            \begin{tabular}{| p{8cm} | p{8cm} |}
                 \hline
                 \multicolumn{2}{|c|}{\textbf{Wytyczne (guidelines)}}\\
                 \hline
@@ -202,9 +159,7 @@
     \begin{itemize}
         \item \textbf{Zdolność} oprogramowania do \textbf{zapewnienia odpowiedniej efektywności} w działaniu, relatywnie do
         ilości zużytych zasobów
-        \item Systemy o znaczeniu krytycznym muszą dostarczać swoje funkcje w ściśle określonym czasie
-        \item Dla systemów czasu rzeczywistego (i innych) ważne jest \textbf{zużycie zasobów}.
-        \item Najczęstsza przyczyna błędów wydajności: \textbf{błędy projektowe} (a więc trudne do usunięcia w późniejszych fazach testów).
+        \item Najczęstsza przyczyna błędów wydajności: \textbf{błędy projektowe}.
     \end{itemize}
 
 
@@ -248,64 +203,25 @@
             \item Większość defektów jest \textbf{niewidoczna dla testowania dynamicznego}
             \item Najlepiej sprawdzają się \textbf{techniki statyczne}
         \end{itemize}
+        \item \textbf{Podcharakterystyki pielęgnowalności}
+        \begin{itemize}
+            \item \textbf{Analizowalność} - łatwość diagnozowania problemów (problem: spaghetti code)
+            \item \textbf{Modyfikowalność} - zdolność do wprowadzania zmian (problem: zły standard kodowania)
+            \item \textbf{Stabilność} - zdolność do unikania niespodziewanych efektów na skutek zmian (problem: brak kohezji)
+            \item \textbf{Testowalność} - łatwość walidacji po wprowadzonej zmianie (problem: zła dokumentacja)
+        \end{itemize}
     \end{itemize}
 
-    \begin{table}[H]
-        \begin{center}
-            \begin{tabular}{p{8cm} | p{8cm}}
-                \multicolumn{2}{c}{\textbf{Podcharakterystyki pielęgnowalności}}\\
-                \multicolumn{2}{c}{i \textbf{problemy} z nimi związane:}\\
-                \hline
-                \begin{itemize}
-                    \item \textbf{Analizowalność} - łatwość diagnozowania problemów
-                    \begin{itemize}
-                        \item spaghetti code
-                        \item brak dobrej dokumentacji
-                        \item brak lub złe standardy/zalenia
-                        \item abstrakcja kodu
-                    \end{itemize}
-
-                    \item \textbf{Modyfikowalność} - zdolność do wprowadzania zmian
-                    \begin{itemize}
-                        \item brak kohezji
-                        \item zły styl kodowania
-                        \item kiepska dokumentacja
-                    \end{itemize}
-                \end{itemize}
-                &
-                \begin{itemize}
-                    \item \textbf{Stabilność} - zdolność do unikania niespodziewanych efektów na skutek zmian
-                    \begin{itemize}
-                        \item związanie
-                        \item brak kohezji
-                        \item jakośc wymagań
-                    \end{itemize}
-
-                    \item \textbf{Testowalność} - łatwość walidacji po wprowadzonej zmianie
-                    \begin{itemize}
-                        \item brak lub zła dokumentacja
-                        \item brak komentarzy w kodzie
-                        \item antywzorce projektowe
-                        \item zła konwencja nazewnictwa
-                        \item brak instrumentacji kodu
-                    \end{itemize}
-                \end{itemize}\\
-            \end{tabular}
-        \end{center}
-    \end{table}
 
     \subsubsection{Przenaszalność}
     Przenaszalność to \textbf{łatwość, z jaką oprogramowanie może być przeniesione} między środowiskami.
-
-    \textbf{Podcharakterystyki przenaszalności}
-
     \begin{itemize}
         \item \textbf{Adaptowalność} – zdolność do adaptacji w innym środowisku bez
         podejmowania akcji innych niż przewidziane w tym celu.
         \item \textbf{Zastępowalność}
         \item \textbf{Instalowalność}
         \item \textbf{Koegzystencja} – zdolność do współistnienia z innym, niezależnym oprogramowaniem dzielącym środowisko
-        – np. „przywłaszczenie” standardowego skrótu klawiszowego lub kombinacji dla znaków specjalnych przez inny program
+        – np. „przywłaszczenie” standardowego skrótu klawiszowego przez inny program.
     \end{itemize}
 
 \end{document}

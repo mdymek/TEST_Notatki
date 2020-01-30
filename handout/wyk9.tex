@@ -1,36 +1,18 @@
 \documentclass[../main.tex]{subfiles}
 
 \begin{document}
-    \begin{figure}[H]
-        \includegraphics[width=\linewidth]{auttest.png}
-    \end{figure}
-
     \textbf{Efekt próbnika (probe effect)} - niezamierzony wpływ na zachowanie systemu spowodowany pomiarami tego systemu.
     Narzędzie które wpływa na wynik testu nazywamy \textbf{inwazyjnym}.
 
-    \subsection{ Generyczna architektura automatyzacji testów}
-    \begin{figure}[H]
-        \includegraphics[width=\linewidth]{genaut.png}
-    \end{figure}
 
-    \subsection{Automatyczna generacja danych testowych}
-    \begin{table}[H]
-        \begin{center}
-            \begin{tabular}{p{8cm} p{8cm}}
-                \begin{itemize}
-                    \item metoda losowa
-                    \item generacja z rozkładu prawdopodobieństwa
-                    \item generacja z modelu
-                \end{itemize}
-                &
-                \begin{itemize}
-                    \item generacja na podstawie symbolicznego wykonania kodu
-                    \item generacja metodyczna (np. pair-wise)
-                    \item generacja na podstawie danych zewnętrzych
-                \end{itemize}
-            \end{tabular}
-        \end{center}
-    \end{table}
+    \textbf{Zalecenia dotyczące architektury} systemu automatyzacji:
+    \begin{itemize}
+        \item \textbf{pojedyncza odpowiedzialność} komponentów; każdy odpowiada za pojedynczy obszar
+        \item \textbf{rozszerzalność} - komponenty rozszerzalne, ale nie modyfikowalne
+        \item \textbf{zastępowalność}
+        \item \textbf{rozdzielność}
+        \item \textbf{abstrakcyjność zależności} - komponenty zależą od abstrakcji
+    \end{itemize}
 
     \subsection{Techniki automatyzacji testów}
     \begin{tabular}{| p{5cm} || p {5cm} | p{5cm} |}
@@ -74,9 +56,9 @@
         \item \textbf{Podstawowa idea: ulepszyć jakość i efektywność} projektu i implementacji testów przez:
         \begin{itemize}
             \item projekt wyczerpującego modelu MBT, zwykle z użyciem narzędzi,
-            \item użycie modelu jako specyfikacji projektu testów, pozwalającego na automatyczną generację przypadków testowych z modelu
+            \item model jako specyfikacja projektu testów, automatyczna generacja przypadków testowych,
         \end{itemize}
-        \item \textbf{Rodzaje modeli}: strukturalne, behawioralne, danych.
+        \item \textbf{Rodzaje modeli}: strukturalne, behawioralne, danych (UML).
     \end{itemize}
 
     \begin{table}[H]
@@ -86,7 +68,7 @@
                 \begin{itemize}
                     \item modelowanie ułatwia \textbf{komunikację} z interesariuszami
                     \item \textbf{zrozumienie}
-                    \item \textbf{łatwiejsze zaangażowanie} interesariuszy modelem
+                    \item \textbf{łatwiejsze zaangażowanie} interesariuszy
                     \item \textbf{łatwa identyfikacja „problematycznych” części systemu}
                     \item \textbf{wczesna generacja i analiza przypadków testowych} - możliwe przed stworzeniem systemu
                 \end{itemize}
@@ -96,13 +78,11 @@
                     \item \textbf{możliwe reużycie} artefaktów MBT
                     \item \textbf{automatyzacja} - np. generacja testaliów
                     \item \textbf{adaptacja do zmian} - różne suity testów mogą być generowane z tego samego modelu
-                    \item \textbf{redukcja kosztów przy zmianie wymagań} - MBT pomaga zredukować koszty utrzymania gdy
-                    zmieniają się wymagania, bo model MBT dostarcza „single point of maintenance”
+                    \item \textbf{redukcja kosztów przy zmianie wymagań} - „single point of maintenance”
                 \end{itemize}\\
             \end{tabular}
         \end{center}
     \end{table}
-
 
     \begin{table}[H]
         \begin{center}
@@ -116,8 +96,7 @@
                     \item \textbf{Wymagania połączone z modelem} - elementy modelu są połączone z wybranymi
                     wymaganiami. Pełne pokrycie wymagań odpowiada zestawowi testów całkowicie pokrywających wybrany zbiór wymagań.
 
-                    \item \textbf{Elementy modelu MBT} - bazuje na \textbf{wewnętrznej strukturze modelu}. Definiuje się elementy
-                    pokrycia, a testy powinny je pokrywać.
+                    \item Pokrycie \textbf{Elementów modelu MBT} - bazuje na \textbf{wewnętrznej strukturze modelu}.
 
                     \item \textbf{Oparte na danych} - związane są z takimi technikami projektowania testów jak:
                     \begin{itemize}
@@ -128,14 +107,13 @@
                 \end{itemize}
                 &
                 \begin{itemize}
-                    \item \textbf{Losowe} - polega na \textbf{losowym przechodzeniu przez model}, wszystkie przejścia są równo
+                    \item \textbf{Losowe} przechodzenie przez model, wszystkie przejścia są równo
                     prawdopodobne. \textbf{W podejściu stochastycznym} wybór oparty o \textbf{rozkład prawdopodobieństwa}. Model reprezentuje profil
-                    użycia (tzw. \textbf{profil operacyjny}).
+                    użycia (\textbf{profil operacyjny}).
                     \item \textbf{Oparte na scenariuszu/wzorcu} - scenariuszem może być use case lub
                     scenariusz użycia; wzorzec = częściowo zdefiniowany scenariusz, który można
                     zastosować do modelu MBT aby wyprowadzić jeden lub wiele testów.
-                    \item \textbf{Sterowane projektem} - podejście oparte na dodatkowej informacji projektowej, która została
-                    dodana do modelu aby wspierać zarządzanie testami i/lub aby osiągnąć specificzne cele testowe w projekcie.
+                    \item \textbf{Sterowane projektem} - podejście oparte na dodatkowej informacji projektowej.
                 \end{itemize}\\
                 \hline
             \end{tabular}

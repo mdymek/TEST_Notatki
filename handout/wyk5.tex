@@ -21,11 +21,10 @@
         \item \textbf{model procesu biznesowego} w BPML
         \item \textbf{diagram aktywności} (czynności) w UML
     \end{itemize}
-    W technikach białoskrzynkowych przypadki testowe projektuje się tak, by
-    pokrywały określone elementy modelu (krawędzie, decyzje, ścieżki itp.)
+   Elementy pokrycia = \textbf{elementy modelu} (krawędzie, decyzje, ścieżki itp.)
 
-    Pokrycie (dla metod białoskrzynkowych) sprawdza jakość testów czarnoskrzynkowych; następnie techniki
-    białoskrzynkowe dostarczają testów w celu zwiększenia tego pokrycia
+    \textbf{Pokrycie} (dla metod białoskrzynkowych) \textbf{sprawdza jakość testów czarnoskrzynkowych}; następnie techniki
+    białoskrzynkowe dostarczają testów w celu zwiększenia tego pokrycia.
 
     \subsection{Pokrycia grafowe}
 
@@ -50,23 +49,23 @@
                 \hline
                 \begin{itemize}
                     \item \textbf{CFG} - Control Flow Graph
-                    \item graficzna reprezentacja przepływu sterowania (graf skierowany)
+                    \item graficzna reprezentacja przepływu sterowania
                     \begin{itemize}
                         \item wierzchołki = bloki bazowe
                         \item krawędzie = przejścia między blokami
                     \end{itemize}
-                    \item blok bazowy = sekwencja instrukcji taka, że jeśli wykona się
+                    \item \textbf{blok bazowy} = sekwencja instrukcji taka, że jeśli wykona się
                     pierwsza z nich, wszystkie pozostałe w obrębie bloku wykonają się również
                 \end{itemize}
                 &
                 \begin{itemize}
-                    \item oparty na grafie przepływ sterowania
+                    \item oparty na grafie przepływu sterowania
                     \item zawiera informacje o operacjach na zmiennych
                     \item możliwe operacje:
                     \begin{itemize}
-                        \item \textbf{d} (definition, definicja) – miejsce definiowania zmiennej
-                        \item \textbf{u} (use, użycie) – miejsce użycia zmiennej
-                        \item \textbf{k} (kill, zabicie) – miejsce usunięcia zmiennej z pamięci
+                        \item \textbf{d} = definition, definicja
+                        \item \textbf{u} = use, użycie
+                        \item \textbf{k} = kill, zabicie
                     \end{itemize}
                 \end{itemize}
 
@@ -78,40 +77,22 @@
     \end{table}
 
 
-
     \subsubsection{Pokrycie instrukcyjne}
-    \begin{table}[H]
-        \begin{center}
-            \begin{tabular}{p{8cm} p{8cm}}
-                \textbf{Cechy:} & \textbf{ Problemy praktyczne:}\\
-                \begin{itemize}
-                    \item elementy pokrycia: \textbf{instrukcje} kodu
-                    \item kryterium pokrycia instrukcyjnego: każda linia kodu jest wykonana
-                    przynajmniej raz w jakimś teście
-                    \item osiągnięcie 100\% pokrycia jest często \textbf{nieosiągalne}
-                \end{itemize}
-                &
-                \begin{itemize}
-                    \item jak definiować linię kodu? (linia fizyczna? wykonywalna?)
-                    \item czy rozważać pojedyncze instrukcje, czy bloki bazowe?
-                    \begin{itemize}
-                        \item to wpływa na metryki pokrycia
-                    \end{itemize}
-                \end{itemize}
-            \end{tabular}
-        \end{center}
-    \end{table}
-
-
+    \begin{itemize}
+        \item elementy pokrycia: \textbf{instrukcje} kodu
+        \item kryterium pokrycia instrukcyjnego: każda linia kodu jest wykonana
+        przynajmniej raz w jakimś teście
+        \item osiągnięcie 100\% pokrycia jest często \textbf{nieosiągalne}
+        \item \textbf{problem}: jak definiować linię kodu? (linia fizyczna? wykonywalna?)
+        \item \textbf{problem}: czy rozważać pojedyncze instrukcje, czy bloki bazowe?
+    \end{itemize}
 
 
     \subsubsection{Pokrycie krawędziowe (branch testing)}
     \begin{itemize}
         \item inna nazwa: \textbf{pokrycie przejść} między instrukcjami
-        \item z punktu widzenia struktury, wymagane jest przejście po każdej
+        \item wymagane jest przejście po każdej
         \textbf{krawędzi CFG}, czyli testowany jest każdy \textbf{przepływ sterowania}
-        \item \textbf{suita testowa spełniająca 100\% pokrycia instrukcji nie musi
-        spełniać 100\% przejść między instrukcjami!}
         \item Przy założeniu, że CFG ma co najmniej 1 krawędź, \textbf{pokrycie
         krawędziowe subsumuje pokrycie instrukcyjne, nie na odwrót}.
     \end{itemize}
@@ -122,10 +103,9 @@
         \begin{center}
             \begin{tabular}{p{8cm} p{8cm}}
                 \begin{itemize}
-                    \item możliwe, gdy \textbf{nie ma pętli} lub \textbf{liczba iteracji} wszystkich pętli jest \textbf{ograniczona} z góry (rozsądną wartością)
+                    \item możliwe, gdy \textbf{nie ma pętli} lub \textbf{liczba iteracji} wszystkich pętli jest \textbf{ograniczona} z góry
                     \item najczęstszy przypadek: \textbf{diagramy przepływu procesów}
                     \item nawet dla kodu bez pętli liczba wszystkich ścieżek może \textbf{rosnąć wykładniczo} względem punktów decyzyjnych
-                    \item \textbf{zbiór ścieżek liniowo niezależnych} to odpowiednik \textbf{bazy przestrzeni wektorowej}.
                     \item \textbf{złożoność cyklomatyczna CFG} - liczba ścieżek liniowo niezależnych.
                 \end{itemize}
                 &
@@ -149,16 +129,6 @@
     \begin{table}[H]
         \begin{center}
             \begin{tabular}{p{8cm} p{8cm}}
-                \textbf{Kryteria pokrycia przepływu danych:}
-                \begin{itemize}
-                    \item \textbf{All-defs}: $\forall n : v \in def(n)$
-                    zbiór testów zawiera przynajmniej jedną du-ścieżkę ze zbioru $du(n, v)$
-                    \item \textbf{All-uses}: $\forall (n, m) : v \in def(n)$ and $v \in use(m)$ zbiór testów zawiera przynajmniej jedną
-                    du-ścieżkę ze zbioru $du(n, m, v)$
-                    \item \textbf{All-du-paths}: $\forall n \forall v: v \in def(n)$
-                    zbiór testów zawiera wszystkie du-ścieżki ze zbioru $du(n, v)$
-                \end{itemize}
-                &
                 Ścieżka $p = (p_1 , \dots, p_n)$ jest \textbf{def-czysta} ze względu na zmienną v, jeśli v nie jest
                 definiowana w żadnym węźle ścieżki poza $p_1$.
 
@@ -172,6 +142,16 @@
                 $du(n, v)$ - zbiór wszystkich du-ścieżek ze względu na v rozpoczynających się w n
 
                 $du(n, m, v)$ - zbiór wszystkich du-ścieżek ze względu na v rozpoczynających się w n i kończących w m
+                &
+                \textbf{Kryteria pokrycia przepływu danych:}
+                \begin{itemize}
+                    \item \textbf{All-defs}: $\forall n : v \in def(n)$
+                    zbiór testów zawiera przynajmniej jedną du-ścieżkę ze zbioru $du(n, v)$
+                    \item \textbf{All-uses}: $\forall (n, m) : v \in def(n)$ and $v \in use(m)$ zbiór testów zawiera przynajmniej jedną
+                    du-ścieżkę ze zbioru $du(n, m, v)$
+                    \item \textbf{All-du-paths}: $\forall n \forall v: v \in def(n)$
+                    zbiór testów zawiera wszystkie du-ścieżki ze zbioru $du(n, v)$
+                \end{itemize}\\
             \end{tabular}
         \end{center}
     \end{table}
@@ -184,9 +164,8 @@
             \begin{tabular}{ p{8cm}  p{8cm} }
                 \textbf{Co testujemy w przypadku pętli?}
                 \begin{itemize}
-                    \item problemy w \textbf{inicjalizowaniu} pętli (np. „błąd o jeden” w iteratorze)
-                    \item problemy z niezainicjalizowanymi zmiennymi (poprzez jednokrotne
-                    wykonanie pętli)
+                    \item problemy w \textbf{inicjalizowaniu} pętli
+                    \item problemy z niezainicjalizowanymi zmiennymi
                     \item problemy z \textbf{powtarzaniem instrukcji} zawartych w pętli
                     \item kwestie związane z \textbf{wydajnością}/zasobami
                 \end{itemize}
@@ -195,8 +174,6 @@
                 \begin{itemize}
                     \item istnienie pętli = \textbf{nieskończona liczba ścieżek} do przetestowania
                     \item pętle zagnieżdżone = jeszcze większy problem
-                    \item defekty w pętlach są często \textbf{trudne do wykrycia}
-                    \item jak testować pętle? istnieją różne kryteria i podejścia
                 \end{itemize}
             \end{tabular}
         \end{center}
