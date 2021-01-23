@@ -1,3 +1,6 @@
+%! suppress = LineBreak
+%! suppress = MissingLabel
+%! suppress = FileNotFound
 \documentclass[../main.tex]{subfiles}
 
 \begin{document}
@@ -17,36 +20,36 @@
     \subsection{Techniki automatyzacji testów}
     \begin{tabular}{| p{5cm} || p {5cm} | p{5cm} |}
         \hline
-        \textbf{Technika} & \textbf{Zalety} & \textbf{Wady}\\
+        \textbf{Technika} & \textbf{Zalety} & \textbf{Wady} \\
         \hline
         \hline
         \textbf{nagraj i odtwórz} &
         stosowalne na poziomie GUI lub API, łatwe do konfiguracji i użycia, nie
         wymaga znajomości języków
         &
-        trudne w utrzymaniu, problemy gdy potrzeba czasu na odpowiedź systemu\\
+        trudne w utrzymaniu, problemy gdy potrzeba czasu na odpowiedź systemu \\
         \hline
         \textbf{skrypty linearne} &
         brak żmudnych i kosztownych przygotowań, znajomość programowania niekonieczna gdy
         skrypt tworzony automatycznie
         &
-        koszt automatyzacji liniowy ze względu na liczbę skryptów; trudne i kosztowne w utrzymaniu\\
+        koszt automatyzacji liniowy ze względu na liczbę skryptów; trudne i kosztowne w utrzymaniu \\
         \hline
         \textbf{skrypty zorganizowane} &
         redukcja kosztów utrzymania, zmniejszenie kosztu automatyzacji nowych testów
         &
         zwiększone koszty początkowe tworzenia reużywalnych skryptów; wymaga umiejętności
-        programowania\\
+        programowania \\
         \hline
         \textbf{data-driven testing} &
         niski koszt dodania testu; nie wymaga znajomości programowania; tanie w utrzymaniu
         &
-        ograniczona możliwość przeprowadzania testów negatywnych\\
+        ograniczona możliwość przeprowadzania testów negatywnych \\
         \hline
         \textbf{keyword-driven testing} &
         tanie w utrzymaniu; swoboda w tworzeniu testów
         &
-        kosztowna implementacja słów kluczowych; trudność w doborze właściwych słów\\
+        kosztowna implementacja słów kluczowych; trudność w doborze właściwych słów \\
         \hline
     \end{tabular}
 
@@ -64,7 +67,7 @@
     \begin{table}[H]
         \begin{center}
             \begin{tabular}{p{8cm} p{8cm}}
-                \textbf{Efektywność} & \textbf{Wydajność}\\
+                \textbf{Efektywność} & \textbf{Wydajność} \\
                 \begin{itemize}
                     \item modelowanie ułatwia \textbf{komunikację} z interesariuszami
                     \item \textbf{zrozumienie}
@@ -79,7 +82,7 @@
                     \item \textbf{automatyzacja} - np. generacja testaliów
                     \item \textbf{adaptacja do zmian} - różne suity testów mogą być generowane z tego samego modelu
                     \item \textbf{redukcja kosztów przy zmianie wymagań} - „single point of maintenance”
-                \end{itemize}\\
+                \end{itemize} \\
             \end{tabular}
         \end{center}
     \end{table}
@@ -88,9 +91,9 @@
         \begin{center}
             \begin{tabular}{| p{8cm} | p{8cm} |}
                 \hline
-                \multicolumn{2}{|c|}{\textbf{Kryteria wyboru testów}}\\
+                \multicolumn{2}{|c|}{\textbf{Kryteria wyboru testów}} \\
                 \hline
-                \textbf{Oparte na pokryciu} & \textbf{Inne}\\
+                \textbf{Oparte na pokryciu} & \textbf{Inne} \\
                 \hline
                 \begin{itemize}
                     \item \textbf{Wymagania połączone z modelem} - elementy modelu są połączone z wybranymi
@@ -114,7 +117,7 @@
                     scenariusz użycia; wzorzec = częściowo zdefiniowany scenariusz, który można
                     zastosować do modelu MBT aby wyprowadzić jeden lub wiele testów.
                     \item \textbf{Sterowane projektem} - podejście oparte na dodatkowej informacji projektowej.
-                \end{itemize}\\
+                \end{itemize} \\
                 \hline
             \end{tabular}
         \end{center}

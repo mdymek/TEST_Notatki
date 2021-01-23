@@ -1,35 +1,33 @@
+%! suppress = LineBreak
+%! suppress = MissingLabel
+%! suppress = FileNotFound
 \documentclass[../main.tex]{subfiles}
 
 \begin{document}
-    \begin{figure}[H]
-        \includegraphics[width=\linewidth]{jakosc.png}
-    \end{figure}
-
-
     \begin{table}[H]
         \begin{center}
             \begin{tabular}{| p{3cm} || p{6cm} | p{6cm} |}
                 \hline
-                & \textbf{Zapewnianie jakości (QA)} & \textbf{Testowanie (QC)}\\
+                & \textbf{Zapewnianie jakości (QA)} & \textbf{Testowanie (QC)}    \\
                 \hline
                 \hline
                 \textbf{Cel} & Ulepszyć proces produkcji i testowania oprogramowania,
                 aby defekty się nie pojawiały & Identyfikacja defektów po wyprodukowaniu produktu,
-                a przed wydaniem do klienta\\
+                a przed wydaniem do klienta \\
                 \hline
                 \textbf{Jak?} & Wdrożenie systemu zarządzania jakością; okresowe audyty &
-                Znajdowanie i eliminowanie problemów z jakością aby wymagania klienta były spełnione\\
+                Znajdowanie i eliminowanie problemów z jakością aby wymagania klienta były spełnione \\
                 \hline
                 \textbf{Co?} & Zapobieganie problemom przez planowe i systematyczne działania
-                & Wykorzystanie technik testowania do identyfikacji defektów\\
+                & Wykorzystanie technik testowania do identyfikacji defektów \\
                 \hline
-                \textbf{Odpowiedzialność} & Wszyscy są odpowiedzialni & Zwykle zespół testerski\\
+                \textbf{Odpowiedzialność} & Wszyscy są odpowiedzialni         & Zwykle zespół testerski     \\
                 \hline
-                \textbf{Przykład} & Weryfikacja & Walidacja, testowanie\\
+                \textbf{Przykład}         & Weryfikacja                       & Walidacja, testowanie       \\
                 \hline
-                \textbf{Techniki} & Statistical Process Control & Statistical Quality Control\\
+                \textbf{Techniki}         & Statistical Process Control       & Statistical Quality Control \\
                 \hline
-                \textbf{Jako narzędzie} & QA to narzędzia zarządcze & QC to narzędzie korekcyjne\\
+                \textbf{Jako narzędzie}   & QA to narzędzia zarządcze         & QC to narzędzie korekcyjne  \\
                 \hline
             \end{tabular}
         \end{center}
@@ -38,15 +36,15 @@
     \begin{table}[H]
         \begin{center}
             \begin{tabular}{p{8cm} p{8cm}}
-                \multicolumn{2}{c}{\textbf{Przykłady aktywności QA.}}\\
+                \multicolumn{2}{c}{\textbf{Przykłady aktywności QA.}} \\
                 \begin{itemize}
                     \item \textbf{definiowanie i implementacja procesów}
                     \begin{itemize}
                         \item metodyka wytwarzania oprogramowania
-                        \item zarządzanieprojektami
-                        \item zarządzanie konfiguracją
-                        \item zarządzanie wymaganiami
-                        \item metody pomiaru oprogramowania, szacowanie – projektowanie oprogramowania
+                        \item zarządzanie projektami
+                        \item zarządzanie wymaganiami, konfiguracją
+                        \item pomiary oprogramowania, szacowanie
+                        \item projektowanie oprogramowania
                         \item proces testowy
                     \end{itemize}
                 \end{itemize}
@@ -63,21 +61,23 @@
     \subsubsection{Metryki oprogramowania}
 
     \textbf{GQM - Goal-Question-Metric}
-
-    \begin{figure}[H]
-        \includegraphics[width=\linewidth]{gqm.png}
-    \end{figure}
+    \begin{itemize}
+        \item \textbf{Cel} - co chce osiagnąć klient?
+        \item \textbf{Pytania} - scharakteryzowanie metody osiągniecia celu
+        \item \textbf{Metryki} - ilościowe odpowiedzi.
+    \end{itemize}
 
     \begin{table}[H]
         \begin{center}
             \begin{tabular}{p{8cm} p{8cm}}
-                \multicolumn{2}{c}{\textbf{Miary wolumenowe kodu}}\\
+                \multicolumn{2}{c}{\textbf{Miary wolumenowe kodu}} \\
 
                 \begin{itemize}
                     \item \textbf{LOC (Lines of Code)}
                     \begin{itemize}
                         \item prosta, niezawodna, wspierana narzędziami metoda
-                        \item problem: dokładny pomiar dopiero po implementacji – problem: nie mierzy tego, co program robi
+                        \item problem: dokładny pomiar dopiero po implementacji
+                        \item problem: nie mierzy tego, co program robi
                     \end{itemize}
                 \end{itemize}
                 &
@@ -95,64 +95,44 @@
 
     \begin{table}[H]
         \begin{center}
-            \begin{tabular}{p{8cm} p{8cm}}
-                \multicolumn{2}{c}{  \textbf{Metryki złożoności strukturalnej}}\\
+            \begin{tabular}{p{8,5cm} p{8cm}}
+                \multicolumn{2}{c}{  \textbf{Metryki złożoności strukturalnej}} \\
                 \begin{itemize}
                     \item \textbf{rozmiar} (LOC, FP)
-                    \item \textbf{złożoność cyklomatyczna} (stopień komplikacji kodu) [zalecane $<$ 10]
-                    \item \textbf{złożoność Halsteada} (\# operatorów i operandów); krytykowana!
+                    \item \textbf{złożoność cyklomatyczna}
+                    \item \textbf{złożoność Halsteada} (\# operatorów i operandów)
                     \item \textbf{przepływ informacji} (z i do modułu)
-                    \item \textbf{złożoność systemu} (dla pomiaru pielęgnowalności)
+                    \item \textbf{złożoność systemu} (pomiar pielęgnowalności)
                 \end{itemize}
                 &
+                metryki \textbf{strukturalne dla OOP}
                 \begin{itemize}
-                    \item metryki \textbf{strukturalne dla OOP}
-                    \begin{itemize}
-                        \item \textbf{WMC} (Weighted Methods defined per Class) [zalecane $<$ 100]
-                        \item \textbf{DIT} (Depth of Inheritance Tree) [zalecane jak najmniejsze]
-                        \item \textbf{NOC} (Number Of Children) [zalecane $<$ 40]
-                        \item \textbf{CBO} (Coupling Between Objects) [zalecane $<$ 6]
-                        \item \textbf{RFC} (Response For a Class) [zalecane $<$ 100, $<$ 5*liczba metod]
-                        \item \textbf{LCOM} (Lack Of Cohesion) [zalecane jak najmniejsze]
-                    \end{itemize}
-                \end{itemize}\\
+                    \item \textbf{WMC} (Weighted Methods defined per Class)
+                    \item \textbf{DIT} (Depth of Inheritance Tree)
+                    \item \textbf{NOC} (Number Of Children)
+                    \item \textbf{CBO} (Coupling Between Objects)
+                    \item \textbf{RFC} (Response For a Class)
+                    \item \textbf{LCOM} (Lack Of Cohesion)
+                \end{itemize} \\
             \end{tabular}
         \end{center}
     \end{table}
 
-    \textbf{Metryki złożoności konceptualnej} dotyczą trudności w zrozumieniu wymagań/kodu/itp.\\
+    \textbf{Metryki złożoności konceptualnej} dotyczą trudności w zrozumieniu wymagań/kodu/itp.
 
     \textbf{Metryki złożoności obliczeniowej} dotyczą złożoności obliczeń programu w trakcie jego wykonania.
 
     \begin{table}[H]
         \begin{center}
             \begin{tabular}{p{8cm} p{8cm}}
-                \multicolumn{2}{c}{\textbf{ Najczęstsze metryki defektów}}\\
-                \begin{itemize}
-                    \item liczba defektów
-                    \item gęstość defektów = liczba defektów / objętość kodu
-                    \item częstość defektów = liczba defektów / jednostkę czasu
-                \end{itemize}
-                &
-                \begin{itemize}
-                    \item odsetek wykrytych defektów = wykryte defekty / wszystkie defekty
-                    \item wzorzec powstawania defektów
-                \end{itemize}\\
-            \end{tabular}
-        \end{center}
-    \end{table}
-
-    \begin{table}[H]
-        \begin{center}
-            \begin{tabular}{p{8cm} p{8cm}}
-                \multicolumn{2}{c}{\textbf{Modele statyczne defektów}}\\
+                \multicolumn{2}{c}{\textbf{Modele statyczne defektów}} \\
                 \begin{itemize}
                     \item Model fazowy.
                     \item Modele zmian w kodzie.
                 \end{itemize}
                 &
                 \begin{itemize}
-                    \item Model Rayleigha - opisuje rozkład znajdowania defektów w czasie.
+                    \item \textbf{Model Rayleigha} - opisuje rozkład znajdowania defektów w czasie.
                 \end{itemize}
             \end{tabular}
         \end{center}

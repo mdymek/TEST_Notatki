@@ -1,17 +1,22 @@
+%! suppress = LineBreak
+%! suppress = Unicode
+%! suppress = MissingLabel
+%! suppress = MissingImport
+%! suppress = FileNotFound
 \documentclass[../main.tex]{subfiles}
 
 \begin{document}
     Testowanie oparte na \textbf{strukturze} oprogramowania lub systemu, np.:
 
     \begin{tabular}{p{4cm} || p{12cm}}
-        \textbf{Poziom testów} & \textbf{Przykład struktury}\\
+        \textbf{Poziom testów}      & \textbf{Przykład struktury}                            \\
         \hline
         \hline
-        \textbf{testy modułowe} & kod: instrukcje, decyzje, rozgałęzienia, ścieżki\\
+        \textbf{testy modułowe}     & kod: instrukcje, decyzje, rozgałęzienia, ścieżki       \\
         \hline
-        \textbf{testy integracyjne} & drzewo wywołań\\
+        \textbf{testy integracyjne} & drzewo wywołań                                         \\
         \hline
-        \textbf{testy systemowe} & struktura menu, proces biznesowy, struktura strony www\\
+        \textbf{testy systemowe}    & struktura menu, proces biznesowy, struktura strony www \\
     \end{tabular}
 
 
@@ -31,17 +36,16 @@
         \includegraphics[width=\linewidth]{whitebox.png}
     \end{figure}
 
-
     \subsection{Pokrycia grafowe}
 
     \begin{table}[H]
         \begin{center}
             \begin{tabular}{p{8cm} | p{8cm}}
-                \multicolumn{2}{c}{\textbf{POKRYCIA}}\\
+                \multicolumn{2}{c}{\textbf{POKRYCIA}} \\
                 \hline
-                \textbf{Syntaktyczne} & "teoretyczne", wszystkie ścieżki grafu ignorując logikę poszczególnych węzłów.\\
+                \textbf{Syntaktyczne} & "teoretyczne", wszystkie ścieżki grafu ignorując logikę poszczególnych węzłów. \\
                 \hline
-                \textbf{Semantyczne} & uwzględniające tę logikę.\\
+                \textbf{Semantyczne}  & uwzględniające tę logikę.                                                      \\
 
             \end{tabular}
         \end{center}
@@ -50,7 +54,7 @@
     \begin{table}[H]
         \begin{center}
             \begin{tabular}{p{8cm} | p{8cm}}
-                \textbf{Graf przepływu sterowania} &  \textbf{Graf przepływu danych}\\
+                \textbf{Graf przepływu sterowania} & \textbf{Graf przepływu danych} \\
                 \hline
                 \hline
                 \begin{itemize}
@@ -82,13 +86,11 @@
         \end{center}
     \end{table}
 
-
-
     \subsubsection{Pokrycie instrukcyjne}
     \begin{table}[H]
         \begin{center}
             \begin{tabular}{p{8cm} p{8cm}}
-                \textbf{Cechy:} & \textbf{ Problemy praktyczne:}\\
+                \textbf{Cechy:} & \textbf{ Problemy praktyczne:} \\
                 \begin{itemize}
                     \item elementy pokrycia: \textbf{instrukcje} kodu
                     \item kryterium pokrycia instrukcyjnego: każda linia kodu jest wykonana
@@ -107,9 +109,6 @@
         \end{center}
     \end{table}
 
-
-
-
     \subsubsection{Pokrycie krawędziowe (branch testing)}
     \begin{itemize}
         \item inna nazwa: \textbf{pokrycie przejść} między instrukcjami
@@ -120,7 +119,6 @@
         \item Przy założeniu, że CFG ma co najmniej 1 krawędź, \textbf{pokrycie
         krawędziowe subsumuje pokrycie instrukcyjne, nie na odwrót}.
     \end{itemize}
-
 
     \subsubsection{Pełne pokrycie ścieżek}
     \begin{table}[H]
@@ -147,7 +145,6 @@
             \end{tabular}
         \end{center}
     \end{table}
-
 
     \subsubsection{Pokrycie przepływu danych}
     Wierzchołki: p,n; Zmienne: v.
@@ -181,17 +178,16 @@
         \end{center}
     \end{table}
 
-
     \subsubsection{Pokrycie pętli}
 
     \begin{table}[H]
         \begin{center}
             \begin{tabular}{| p{8cm} | p{8cm} |}
                 \hline
-                \multicolumn{2}{|c|}{\textbf{RODZAJE PĘTLI}}\\
+                \multicolumn{2}{|c|}{\textbf{RODZAJE PĘTLI}} \\
                 \hline
                 \hline
-                \textbf{proste} & \textbf{zagnieżdżone}\\
+                \textbf{proste}    & \textbf{zagnieżdżone}          \\
                 \hline
                 \begin{itemize}
                     \item przetestuj brak wykonania pętli (pominięcie pętli, wykonanie 0 razy)
@@ -206,10 +202,10 @@
                     \item dla najbardziej zagnieżdżonej pętli przeprowadź test pętli prostej
                     \item powtórz ten test dla kolejnych coraz bardziej zewnętrznych pętli
                     \item powtarzaj, dopóki nie przetestujesz najbardziej zewnętrznej
-                \end{itemize}\\
+                \end{itemize} \\
                 \hline
                 \hline
-                \textbf{połączone} & \textbf{nieustrukturalizowane}\\
+                \textbf{połączone} & \textbf{nieustrukturalizowane} \\
                 \hline
                 \begin{itemize}
                     \item jeśli pętle połączone są niezależne, dla każdej z nich wykonaj test pętli prostej
@@ -221,7 +217,7 @@
                     kodu w celu usunięcia
                     nieustrukturyzowanych pętli
                     \item pozbycie się instrukcji goto
-                \end{itemize}\\
+                \end{itemize} \\
                 \hline
             \end{tabular}
         \end{center}

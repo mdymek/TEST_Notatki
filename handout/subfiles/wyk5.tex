@@ -1,17 +1,20 @@
+%! suppress = LineBreak
+%! suppress = MissingLabel
+%! suppress = FileNotFound
 \documentclass[../main.tex]{subfiles}
 
 \begin{document}
     Testowanie oparte na \textbf{strukturze} oprogramowania lub systemu, np.:
 
     \begin{tabular}{p{4cm} || p{12cm}}
-        \textbf{Poziom testów} & \textbf{Przykład struktury}\\
+        \textbf{Poziom testów}      & \textbf{Przykład struktury}                            \\
         \hline
         \hline
-        \textbf{testy modułowe} & kod: instrukcje, decyzje, rozgałęzienia, ścieżki\\
+        \textbf{testy modułowe}     & kod: instrukcje, decyzje, rozgałęzienia, ścieżki       \\
         \hline
-        \textbf{testy integracyjne} & drzewo wywołań\\
+        \textbf{testy integracyjne} & drzewo wywołań                                         \\
         \hline
-        \textbf{testy systemowe} & struktura menu, proces biznesowy, struktura strony www\\
+        \textbf{testy systemowe}    & struktura menu, proces biznesowy, struktura strony www \\
     \end{tabular}
 
 
@@ -21,7 +24,7 @@
         \item \textbf{model procesu biznesowego} w BPML
         \item \textbf{diagram aktywności} (czynności) w UML
     \end{itemize}
-   Elementy pokrycia = \textbf{elementy modelu} (krawędzie, decyzje, ścieżki itp.)
+    Elementy pokrycia = \textbf{elementy modelu} (krawędzie, decyzje, ścieżki itp.)
 
     \textbf{Pokrycie} (dla metod białoskrzynkowych) \textbf{sprawdza jakość testów czarnoskrzynkowych}; następnie techniki
     białoskrzynkowe dostarczają testów w celu zwiększenia tego pokrycia.
@@ -31,11 +34,11 @@
     \begin{table}[H]
         \begin{center}
             \begin{tabular}{p{8cm} | p{8cm}}
-                \multicolumn{2}{c}{\textbf{POKRYCIA}}\\
+                \multicolumn{2}{c}{\textbf{POKRYCIA}} \\
                 \hline
-                \textbf{Syntaktyczne} & "teoretyczne", wszystkie ścieżki grafu ignorując logikę poszczególnych węzłów.\\
+                \textbf{Syntaktyczne} & "teoretyczne", wszystkie ścieżki grafu ignorując logikę poszczególnych węzłów. \\
                 \hline
-                \textbf{Semantyczne} & uwzględniające tę logikę.\\
+                \textbf{Semantyczne}  & uwzględniające tę logikę.                                                      \\
 
             \end{tabular}
         \end{center}
@@ -44,7 +47,7 @@
     \begin{table}[H]
         \begin{center}
             \begin{tabular}{p{8cm} | p{8cm}}
-                \textbf{Graf przepływu sterowania} &  \textbf{Graf przepływu danych}\\
+                \textbf{Graf przepływu sterowania} & \textbf{Graf przepływu danych} \\
                 \hline
                 \hline
                 \begin{itemize}
@@ -76,7 +79,6 @@
         \end{center}
     \end{table}
 
-
     \subsubsection{Pokrycie instrukcyjne}
     \begin{itemize}
         \item elementy pokrycia: \textbf{instrukcje} kodu
@@ -87,7 +89,6 @@
         \item \textbf{problem}: czy rozważać pojedyncze instrukcje, czy bloki bazowe?
     \end{itemize}
 
-
     \subsubsection{Pokrycie krawędziowe (branch testing)}
     \begin{itemize}
         \item inna nazwa: \textbf{pokrycie przejść} między instrukcjami
@@ -96,7 +97,6 @@
         \item Przy założeniu, że CFG ma co najmniej 1 krawędź, \textbf{pokrycie
         krawędziowe subsumuje pokrycie instrukcyjne, nie na odwrót}.
     \end{itemize}
-
 
     \subsubsection{Pełne pokrycie ścieżek}
     \begin{table}[H]
@@ -122,7 +122,6 @@
             \end{tabular}
         \end{center}
     \end{table}
-
 
     \subsubsection{Pokrycie przepływu danych}
     Wierzchołki: p,n; Zmienne: v.
@@ -155,7 +154,6 @@
             \end{tabular}
         \end{center}
     \end{table}
-
 
     \subsubsection{Pokrycie pętli}
 

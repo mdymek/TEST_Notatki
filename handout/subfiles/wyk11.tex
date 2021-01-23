@@ -1,3 +1,6 @@
+%! suppress = LineBreak
+%! suppress = MissingLabel
+%! suppress = FileNotFound
 \documentclass[../main.tex]{subfiles}
 
 \begin{document}
@@ -33,9 +36,9 @@
         \begin{center}
             \begin{tabular}{| p{5cm} p{5cm} p{5cm} |}
                 \hline
-                \multicolumn{3}{|c|}{\textbf{Identyfikacja ryzyka}}\\
+                \multicolumn{3}{|c|}{\textbf{Identyfikacja ryzyka}} \\
                 \multicolumn{3}{|c|}{proces identyfikacji możliwych do wystąpienia ryzyk. Techniki identyfikacji
-                ryzyka:}\\
+                ryzyka:} \\
                 \hline
                 \begin{itemize}
                     \item burza mózgów
@@ -51,7 +54,7 @@
                 &
                 \begin{itemize}
                     \item doświadczenie z poprzednich projektów
-                \end{itemize}\\
+                \end{itemize} \\
                 \hline
             \end{tabular}
         \end{center}
@@ -61,9 +64,9 @@
         \begin{center}
             \begin{tabular}{| p{8cm}  p{8cm} |}
                 \hline
-                \multicolumn{2}{|c|}{\textbf{Analiza ryzyka}}\\
+                \multicolumn{2}{|c|}{\textbf{Analiza ryzyka}} \\
                 \multicolumn{2}{|p{16,5cm}|}{proces oceny zidentyfikowanych ryzyk w celu oszacowania ich wpływu
-                oraz prawdopodobieństwa wystąpienia,}\\
+                oraz prawdopodobieństwa wystąpienia,} \\
                 \hline
                 Wyjście: \textbf{lista ryzyk}
                 \begin{itemize}
@@ -73,13 +76,13 @@
                 \end{itemize}
                 &
                 \textbf{Szacowanie ilościowe} analizy ryzyka to określenie kosztu materializacji ryzyka.
-                Często trudne lub niemożliwe – wtedy stosuje się \textbf{podejście jakościowe}.\\
+                Często trudne lub niemożliwe – wtedy stosuje się \textbf{podejście jakościowe}. \\
 
 
                 \hline
                 \hline
-                \multicolumn{2}{|c|}{\textbf{Łagodzenie ryzyka}}\\
-                \multicolumn{2}{|c|}{proces implementacji planów mających zapobiegać ryzyku. Metody łagodzenia ryzyka:}\\
+                \multicolumn{2}{|c|}{\textbf{Łagodzenie ryzyka}} \\
+                \multicolumn{2}{|c|}{proces implementacji planów mających zapobiegać ryzyku. Metody łagodzenia ryzyka:} \\
                 \hline
                 \begin{itemize}
                     \item łagodzenie ryzyka przez podjęcie \textbf{czynności prewencyjnych},
@@ -89,12 +92,12 @@
                 \begin{itemize}
                     \item \textbf{transfer ryzyka}, czyli przeniesienie ryzyka na stronę trzecią (np. ubezpieczyciela),
                     \item \textbf{zignorowanie i zaakceptowanie ryzyka}.
-                \end{itemize}\\
-                \multicolumn{2}{|p{16cm}|}{Podczas fazy łagodzenia ryzyka następuje priorytetyzacja testów wg poziomu ryzyka. Poziom ryzyka wpływa na zakres testowania.}\\
+                \end{itemize} \\
+                \multicolumn{2}{|p{16cm}|}{Podczas fazy łagodzenia ryzyka następuje priorytetyzacja testów wg poziomu ryzyka. Poziom ryzyka wpływa na zakres testowania.} \\
                 \hline
                 \hline
-                \multicolumn{2}{|c|}{\textbf{Kontrola (monitorowanie) ryzyka}}\\
-                \multicolumn{2}{|c|}{ciągła obserwacja aktualnego stanu systemu Przykładowe metryki zbierane w ramach procesu:}\\
+                \multicolumn{2}{|c|}{\textbf{Kontrola (monitorowanie) ryzyka}} \\
+                \multicolumn{2}{|c|}{ciągła obserwacja aktualnego stanu systemu Przykładowe metryki zbierane w ramach procesu:} \\
                 \hline
                 \begin{itemize}
                     \item \% pokrytych wymagań, funkcjonalności
@@ -109,7 +112,7 @@
                         \item "w trakcie" (wykryto problemy)
                         \item niepokryte (nie uruchomiono testów)
                     \end{itemize}
-                \end{itemize}\\
+                \end{itemize} \\
                 \hline
             \end{tabular}
         \end{center}
@@ -120,10 +123,10 @@
         \begin{center}
             \begin{tabular}{| p{8cm} | p{8cm} |}
                 \hline
-                \multicolumn{2}{|c|}{\textbf{Metody analizy ryzyka}}\\
+                \multicolumn{2}{|c|}{\textbf{Metody analizy ryzyka}} \\
                 \hline
                 \hline
-                \textbf{FMEA (Failure Mode and Effect Analysis)} & \textbf{FTA (Fault Tree Analysis)}\\
+                \textbf{FMEA (Failure Mode and Effect Analysis)} & \textbf{FTA (Fault Tree Analysis)} \\
                 \begin{itemize}
                     \item Podejście do \textbf{systematycznej identyfikacji możliwych awarii} systemu
                     \item Awarie są priorytetyzowane wg:
@@ -139,12 +142,12 @@
                     \item Metoda analizy niezawodności, bezpieczeństwa i utrzymywalności
                     \item Dedukcyjna procedura używana w celu określenia \textbf{różnych kombinacji awarii} software’u, hardware’u i błędów ludzkich, które mogą wywołać niepożądane efekty na poziomie systemowym
                     \item Podejście \textbf{top-down} (od ogółu – awarii systemowej, do szczegółu – pojedynczych błędów na niskich poziomach). Podstawowe elementy to bramki logiczne.
-                \end{itemize}\\
+                \end{itemize} \\
                 \hline
                 \textbf{QFD (Quality Function Deployment)}
                 &
 
-                \textbf{PRisMa (Product Risk Management)}\\
+                \textbf{PRisMa (Product Risk Management)} \\
                 \begin{itemize}
                     \item proces/narzędzia przekształcania wymagań użytkownika na specyfikacje systemowe
                 \end{itemize}
@@ -160,8 +163,6 @@
 
     \textbf{POZIOM RYZYKA = PRAWDOPODOBIEŃSTWO $*$ WPŁYW}  (biznesowy).
 
-
-
     \subsection{Biznesowa wartość testowania.}
 
     \textbf{Model CoQ} (Cost of (Poor) Quality) - model opisujący \textbf{koszty} związane z dostarczeniem
@@ -172,16 +173,16 @@
         \begin{center}
             \begin{tabular}{| p{5cm} || p{11cm} |}
                 \hline
-                \textbf{Rodzaj kosztów} & \textbf{Powód ich ponoszenia}\\
+                \textbf{Rodzaj kosztów}            & \textbf{Powód ich ponoszenia}                                                                                                                                      \\
                 \hline
                 \hline
-                koszty \textbf{zapobiegania} & aby unikać defektów; dot. wymagań, planowania i zapewniania jakości, szkoleń (np. szkolenie deweloperów, aby pisany kod był lepszej jakości)\\
+                koszty \textbf{zapobiegania}       & aby unikać defektów; dot. wymagań, planowania i zapewniania jakości, szkoleń (np. szkolenie deweloperów, aby pisany kod był lepszej jakości)                       \\
                 \hline
-                koszty \textbf{wykrywania} & aby wykrywać defekty; ponoszone nawet, gdy nie wykryjemy żadnych defektów (np. wydatki na analizę, projektowanie, implementację, niektóre koszty wykonania testów)\\
+                koszty \textbf{wykrywania}         & aby wykrywać defekty; ponoszone nawet, gdy nie wykryjemy żadnych defektów (np. wydatki na analizę, projektowanie, implementację, niektóre koszty wykonania testów) \\
                 \hline
-                koszty \textbf{wewnętrznego błędu} & z powodu wykrycia awarii (np. pozostałe koszty wykonania testów, koszty re-testów, koszt naprawy defektu przez programistę)\\
+                koszty \textbf{wewnętrznego błędu} & z powodu wykrycia awarii (np. pozostałe koszty wykonania testów, koszty re-testów, koszt naprawy defektu przez programistę)                                        \\
                 \hline
-                koszty \textbf{zewnętrznego błędu} & z powodu niewykrycia awarii (np. koszty wsparcia technicznego, helpdesku, naprawy defektów polowych, kary umowne)\\
+                koszty \textbf{zewnętrznego błędu} & z powodu niewykrycia awarii (np. koszty wsparcia technicznego, helpdesku, naprawy defektów polowych, kary umowne)                                                  \\
                 \hline
             \end{tabular}
         \end{center}

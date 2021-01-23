@@ -1,3 +1,8 @@
+%! suppress = LineBreak
+%! suppress = Unicode
+%! suppress = MissingLabel
+%! suppress = MissingImport
+%! suppress = FileNotFound
 \documentclass[../main.tex]{subfiles}
 
 \begin{document}
@@ -14,7 +19,7 @@
         \begin{center}
             \begin{tabular}{| p{8cm} | p{8cm} |}
                 \hline
-                \textbf{Przykładowe cele i korzyści} & \textbf{Przykładowe ryzyka}\\
+                \textbf{Przykładowe cele i korzyści} & \textbf{Przykładowe ryzyka} \\
                 \hline
                 \begin{itemize}
                     \item wykonywanie testów przez uruchamianie \textbf{skryptów}
@@ -58,7 +63,7 @@
                     \begin{itemize}
                         \item brak wsparcia, szkoleń itp.
                     \end{itemize}
-                \end{itemize}\\
+                \end{itemize} \\
                 \hline
             \end{tabular}
         \end{center}
@@ -72,7 +77,7 @@
         \includegraphics[width=\linewidth]{kosztaut.png}
     \end{figure}
 
-    \subsection{ Generyczna architektura automatyzacji testów}
+    \subsection{Generyczna architektura automatyzacji testów}
     \begin{figure}[H]
         \includegraphics[width=\linewidth]{genaut.png}
     \end{figure}
@@ -99,36 +104,36 @@
     \subsection{Techniki automatyzacji testów}
     \begin{tabular}{| p{5cm} || p {5cm} | p{5cm} |}
         \hline
-        \textbf{Technika} & \textbf{Zalety} & \textbf{Wady}\\
+        \textbf{Technika} & \textbf{Zalety} & \textbf{Wady} \\
         \hline
         \hline
         \textbf{nagraj i odtwórz} &
         stosowalne na poziomie GUI lub API, łatwe do konfiguracji i użycia, nie
         wymaga znajomości języków
         &
-        trudne w utrzymaniu, problemy gdy potrzeba czasu na odpowiedź systemu\\
+        trudne w utrzymaniu, problemy gdy potrzeba czasu na odpowiedź systemu \\
         \hline
         \textbf{skrypty linearne} &
         brak żmudnych i kosztownych przygotowań, znajomość programowania niekonieczna gdy
         skrypt tworzony automatycznie
         &
-        koszt automatyzacji liniowy ze względu na liczbę skryptów; trudne i kosztowne w utrzymaniu\\
+        koszt automatyzacji liniowy ze względu na liczbę skryptów; trudne i kosztowne w utrzymaniu \\
         \hline
         \textbf{skrypty zorganizowane} &
         redukcja kosztów utrzymania, zmniejszenie kosztu automatyzacji nowych testów
         &
         zwiększone koszty początkowe tworzenia reużywalnych skryptów; wymaga umiejętności
-        programowania\\
+        programowania \\
         \hline
         \textbf{data-driven testing} &
         niski koszt dodania testu; nie wymaga znajomości programowania; tanie w utrzymaniu
         &
-        ograniczona możliwość przeprowadzania testów negatywnych\\
+        ograniczona możliwość przeprowadzania testów negatywnych \\
         \hline
         \textbf{keyword-driven testing} &
         tanie w utrzymaniu; swoboda w tworzeniu testów
         &
-        kosztowna implementacja słów kluczowych; trudność w doborze właściwych słów\\
+        kosztowna implementacja słów kluczowych; trudność w doborze właściwych słów \\
         \hline
     \end{tabular}
 
@@ -147,7 +152,7 @@
     \begin{table}[H]
         \begin{center}
             \begin{tabular}{p{8cm} p{8cm}}
-                \textbf{Główna motywacja: efektywność} & \textbf{Główna motywacja: wydajność}\\
+                \textbf{Główna motywacja: efektywność} & \textbf{Główna motywacja: wydajność} \\
                 \begin{itemize}
                     \item modelowanie ułatwia \textbf{komunikację} z interesariuszami
                     \item \textbf{zrozumienie} - lepsza komunikacja pomaga stworzyć wspólną
@@ -169,7 +174,7 @@
                     różnych poziomów i typów testów
                     \item \textbf{redukcja kosztów przy zmianie wymagań} - MBT pomaga zredukować koszty utrzymania gdy
                     zmieniają się wymagania, bo model MBT dostarcza „single point of maintenance”
-                \end{itemize}\\
+                \end{itemize} \\
             \end{tabular}
         \end{center}
     \end{table}
@@ -179,9 +184,9 @@
         \begin{center}
             \begin{tabular}{| p{8cm} | p{8cm} |}
                 \hline
-                \multicolumn{2}{|c|}{\textbf{Kryteria wyboru testów}}\\
+                \multicolumn{2}{|c|}{\textbf{Kryteria wyboru testów}} \\
                 \hline
-                \textbf{Oparte na pokryciu} & \textbf{Inne}\\
+                \textbf{Oparte na pokryciu} & \textbf{Inne} \\
                 \hline
                 \begin{itemize}
                     \item \textbf{Wymagania połączone z modelem} - elementy modelu są połączone z wybranymi
@@ -213,12 +218,11 @@
                     zastosować do modelu MBT aby wyprowadzić jeden lub wiele testów.
                     \item \textbf{Sterowane projektem} - podejście oparte na dodatkowej informacji projektowej, która została
                     dodana do modelu aby wspierać zarządzanie testami i/lub aby osiągnąć specificzne cele testowe w projekcie (np. ryzyka, priorytety).
-                \end{itemize}\\
+                \end{itemize} \\
                 \hline
             \end{tabular}
         \end{center}
     \end{table}
-
 
     \subsection{Wdrażanie narzędzi w organizacji}
     \begin{table}[H]
@@ -246,10 +250,10 @@
         \begin{center}
             \begin{tabular}{| p{8cm} | p{8cm} |}
                 \hline
-                \multicolumn{2}{|c|}{\textbf{PROJEKT PILOTAŻOWY}}\\
+                \multicolumn{2}{|c|}{\textbf{PROJEKT PILOTAŻOWY}} \\
                 \hline
                 \hline
-                \multicolumn{2}{|c|}{\textbf{Cele}}\\
+                \multicolumn{2}{|c|}{\textbf{Cele}} \\
                 \hline
                 \begin{itemize}
                     \item szczegółowe zaznajomienie się z narzędziem
@@ -259,17 +263,17 @@
                 \begin{itemize}
                     \item ustalenie standardów użycia, zarządzania, przechowywania, pielęgnacji narzędzia i artefaktów testowych (np. konwencja nazewnictwa plików)
                     \item ocena, czy korzyści zostaną osiągnięte przy rozsądnych kosztach
-                \end{itemize}\\
+                \end{itemize} \\
                 \hline
                 \hline
-                \multicolumn{2}{|c|}{\textbf{Czynniki sukcesu}}\\
+                \multicolumn{2}{|c|}{\textbf{Czynniki sukcesu}} \\
                 \hline
                 \begin{itemize}
                     \item stopniowe wdrażanie narzędzia w pozostałej części organizacji
                     \item adaptacja i doskonalenie procesu tak, by pasował do narzędzia
                     \item zapewnienie szkoleń i doradztwa nowym użytkownikom
                     \item zdefiniowanie wytycznych co do użycia narzędzia
-                    \end{itemize}
+                \end{itemize}
                 &
                 \begin{itemize}
                     \item wdrożenie sposobu na zbieranie informacji z wykorzystania narzędzia
@@ -277,7 +281,7 @@
                     \item monitorowanie osiąganych korzyści
                     \item zapewnienie wsparcia dla zespołu testowego w użyciu danego narzędzia
                     \item zbieranie wniosków z wykorzystania narzędzia
-                \end{itemize}\\
+                \end{itemize} \\
                 \hline
             \end{tabular}
         \end{center}

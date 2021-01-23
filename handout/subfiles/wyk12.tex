@@ -1,7 +1,11 @@
+%! suppress = LineBreak
+%! suppress = MissingLabel
+%! suppress = FileNotFound
 \documentclass[../main.tex]{subfiles}
 
 \begin{document}
     \subsection{Planowanie testów.}
+
     \subsubsection{Szacowanie}
     \textbf{Rola szacowania} - określenie \textbf{pracochłonności} i \textbf{kosztochłonności} projektu.
 
@@ -12,7 +16,7 @@
     \begin{table}[H]
         \begin{center}
             \begin{tabular}{p{8cm} | p{8cm}}
-                \textbf{Cele dokumentowania} & \textbf{Rodzaje dokumentów}\\
+                \textbf{Cele dokumentowania} & \textbf{Rodzaje dokumentów} \\
                 \hline
                 \begin{itemize}
                     \item \textbf{opisanie} obowiązujących w organizacji lub projekcie \textbf{reguł, standardów, celów} do osiągnięcia, stanowiących punkt odniesienia
@@ -28,18 +32,17 @@
                     \item \textbf{Strategia testów} – wysokopoziomowy opis \textbf{poziomów} testów do wykonania oraz testów w ramach tych poziomów.
                     \item \textbf{Plan testów} – opis \textbf{zakresu, metod, zasobów i harmonogramu} czynności testowych.
                     \item \textbf{Dziennik wykonania testów} – zapis czynności testowych.
-                \end{itemize}\\
+                \end{itemize} \\
                 \hline
             \end{tabular}
         \end{center}
     \end{table}
 
-
     \subsubsection{Metryki}
     \begin{table}[H]
         \begin{center}
             \begin{tabular}{p{8cm} p{8cm}}
-                \multicolumn{2}{c}{\textbf{ Na podstawie metryk możemy:}}\\
+                \multicolumn{2}{c}{\textbf{ Na podstawie metryk możemy:}} \\
                 \begin{itemize}
                     \item \textbf{mierzyć postęp} procesu testowego
                     \item \textbf{obliczyć zwrot} z inwestycji
@@ -52,7 +55,7 @@
                     \item zbudować system \textbf{„wczesnego ostrzegania”}
                     \item zbudować \textbf{modele predykcyjne}
                     \item \textbf{porównywać proces} z procesami konkurencji
-                \end{itemize}\\
+                \end{itemize} \\
             \end{tabular}
         \end{center}
     \end{table}
@@ -94,11 +97,11 @@
         \begin{center}
             \begin{tabular}{c}
 
-                $MTTF$ = \textbf{Mean Time To Failure}\\
+                $MTTF$ = \textbf{Mean Time To Failure}       \\
 
-                $MTTR$ = \textbf{Mean Time To Repair}\\
+                $MTTR$ = \textbf{Mean Time To Repair}        \\
 
-                $MTBF$ = \textbf{Mean Time Between Failures}\\
+                $MTBF$ = \textbf{Mean Time Between Failures} \\
 
             \end{tabular}
         \end{center}
@@ -114,6 +117,7 @@
     \end{itemize}
 
     \subsection{Zarządzanie incydentami}
+
     \subsubsection{IEEE 1044.}
     \textbf{Cykl życia defektu} wg IEEE 1044.
     \begin{enumerate}
@@ -127,28 +131,28 @@
         \begin{center}
             \begin{tabular}{ | p{3cm} | p{4cm} | p{4cm} | p{4cm} |}
                 \hline
-                \multirow{2}{*}{\textbf{Krok}} & \multicolumn{3}{c|}{\textbf{Czynności}}\\
+                \multirow{2}{*}{\textbf{Krok}} & \multicolumn{3}{c|}{\textbf{Czynności}} \\
                 \cline{2-4}
-                \multirow{2}{*}{} & \textbf{rejestruj}\ldots & \textbf{klasyfikuj}\ldots & \textbf{identyfikuj wpływ}\ldots\\
+                \multirow{2}{*}{} & \textbf{rejestruj}\ldots & \textbf{klasyfikuj}\ldots & \textbf{identyfikuj wpływ}\ldots \\
                 \hline
-                \textbf{Rozpoznanie }& wspomagające informacje
+                \textbf{Rozpoznanie } & wspomagające informacje
                 & na podstawie ważnych atrybutów
-                & na podstawie postrzeganego wpływu\\
+                & na podstawie postrzeganego wpływu \\
                 \hline
                 \textbf{Badanie}
                 & zaktualizuj i dodaj dodatkowe informacje
                 & zaktualizuj i dodaj klasyfikację na podst. ważnych atrybutów
-                & aktualizuj na podstawie badania\\
+                & aktualizuj na podstawie badania \\
                 \hline
                 \textbf{Działanie}
                 & dodaj dane oparte o podjęte działanie
                 & dodaj dane oparte o podjęte działanie
-                & aktualizuj na podstawie działania\\
+                & aktualizuj na podstawie działania \\
                 \hline
                 \textbf{Dyspozycja}
                 & dodaj dane bazujące na dyspozycji
                 & na podstawie dyspozycji
-                & aktualizuj na podstawie dyspozycji\\
+                & aktualizuj na podstawie dyspozycji \\
                 \hline
             \end{tabular}
         \end{center}
@@ -159,7 +163,7 @@
         \begin{center}
             \begin{tabular}{| p{8cm} | p{8cm} |}
                 \hline
-                \textbf{Atrybuty defektu wg IEEE 1044} & \textbf{Klasyfikacje wpływu defektu wg IEEE 1044}\\
+                \textbf{Atrybuty defektu wg IEEE 1044} & \textbf{Klasyfikacje wpływu defektu wg IEEE 1044} \\
                 \hline
                 zgłoszenie defektu pozwalające na podjęcie działania jest:
                 \begin{itemize}
@@ -180,7 +184,7 @@
                     \item ryzyko projektu
                     \item jakość projektu
                     \item kwestie społeczne
-                \end{itemize}\\
+                \end{itemize} \\
                 \hline
             \end{tabular}
         \end{center}
